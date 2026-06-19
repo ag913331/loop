@@ -1,14 +1,16 @@
 import Link from "next/link";
-import { getModule } from "@/app/learn/python/modules";
+import { getSection } from "@/app/learn/python/modules";
 
 /**
- * Landing page for a module: its header, a "begin" CTA and the numbered list of
- * lessons. Driven entirely by the module registry, so both modules share it.
+ * Landing page for a section: its module context, header, a "begin" CTA and the
+ * numbered list of lessons. Driven by the module registry, shared by every
+ * section.
  */
-export default function ModuleOverview({ slug }: { slug: string }) {
-  const module = getModule(slug);
-  if (!module) return null;
-  const base = `/learn/python/${module.slug}`;
+export default function SectionOverview({ slug }: { slug: string }) {
+  const found = getSection(slug);
+  if (!found) return null;
+  const { section, module, moduleNumber } = found;
+  const base = `/learn/python/${section.slug}`;
 
   return (
     <main className="mx-auto w-full max-w-3xl flex-1 px-6 py-16">
@@ -21,16 +23,16 @@ export default function ModuleOverview({ slug }: { slug: string }) {
 
       <header className="mt-8">
         <p className="text-sm font-medium text-accent">
-          Python Essentials · Module {module.number}
+          Module {moduleNumber} · {module.title}
         </p>
         <h1 className="mt-1 text-4xl font-bold tracking-tight text-foreground">
-          {module.title}
+          {section.title}
         </h1>
         <p className="mt-5 max-w-2xl text-lg leading-relaxed text-muted">
-          {module.intro}
+          {section.intro}
         </p>
         <Link
-          href={`${base}/${module.lessons[0].slug}`}
+          href={`${base}/${section.lessons[0].slug}`}
           className="mt-7 inline-block rounded-xl bg-brand-strong px-6 py-3 font-semibold text-background transition-transform hover:scale-[1.03]"
         >
           Begin lesson 1 →
@@ -38,7 +40,7 @@ export default function ModuleOverview({ slug }: { slug: string }) {
       </header>
 
       <ol className="mt-12 space-y-3">
-        {module.lessons.map((lesson, i) => (
+        {section.lessons.map((lesson, i) => (
           <li key={lesson.slug}>
             <Link
               href={`${base}/${lesson.slug}`}

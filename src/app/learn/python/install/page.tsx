@@ -1,4 +1,4 @@
-import ModuleOverview from "@/components/ModuleOverview";
+import SectionOverview from "@/components/SectionOverview";
 
 export const metadata = {
   title: "Downloading and Installing Python — loop",
@@ -7,5 +7,5 @@ export const metadata = {
 };
 
 export default function InstallOverview() {
-  return <ModuleOverview slug="install" />;
+  return <SectionOverview slug="install" />;
 }

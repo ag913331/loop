@@ -1,4 +1,4 @@
-import ModuleOverview from "@/components/ModuleOverview";
+import SectionOverview from "@/components/SectionOverview";
 
 export const metadata = {
   title: "Introduction to Programming — loop",
@@ -7,5 +7,5 @@ export const metadata = {
 };
 
 export default function IntroOverview() {
-  return <ModuleOverview slug="intro" />;
+  return <SectionOverview slug="intro" />;
 }

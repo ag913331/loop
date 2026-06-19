@@ -28,37 +28,56 @@ export default function CourseIndex() {
         </p>
       </header>
 
-      <div className="mt-12 space-y-4">
-        {MODULES.map((module) => (
-          <Link
-            key={module.slug}
-            href={`/learn/python/${module.slug}`}
-            className="group block rounded-2xl border border-border bg-surface p-6 transition-colors hover:bg-surface-2"
-          >
-            <div className="flex items-center justify-between">
-              <span className="text-xs font-semibold uppercase tracking-wide text-accent">
-                Section {module.number}
-              </span>
-              <span className="text-xs text-muted">
-                {module.lessons.length} lessons
-              </span>
+      <div className="mt-12 space-y-12">
+        {MODULES.map((module, mi) => (
+          <section key={module.title}>
+            <div className="mb-4">
+              <p className="text-xs font-semibold uppercase tracking-wide text-brand">
+                Module {mi + 1}
+              </p>
+              <h2 className="mt-1 text-2xl font-bold tracking-tight text-foreground">
+                {module.title}
+              </h2>
+              <p className="mt-1 text-sm leading-relaxed text-muted">
+                {module.intro}
+              </p>
             </div>
-            <h2 className="mt-2 text-xl font-semibold text-foreground">
-              {module.title}
-            </h2>
-            <p className="mt-1 line-clamp-2 text-sm leading-relaxed text-muted">
-              {module.intro}
-            </p>
-            <span className="mt-4 inline-flex items-center gap-1 text-sm font-medium text-brand">
-              Open section
-              <span className="transition-transform group-hover:translate-x-1">
-                →
-              </span>
-            </span>
-          </Link>
+
+            <ol className="space-y-3">
+              {module.sections.map((section, si) => (
+                <li key={section.slug}>
+                  <Link
+                    href={`/learn/python/${section.slug}`}
+                    className="group block rounded-2xl border border-border bg-surface p-5 transition-colors hover:bg-surface-2"
+                  >
+                    <div className="flex items-center justify-between">
+                      <span className="text-xs font-semibold uppercase tracking-wide text-accent">
+                        Section {si + 1}
+                      </span>
+                      <span className="text-xs text-muted">
+                        {section.lessons.length} lessons
+                      </span>
+                    </div>
+                    <h3 className="mt-2 text-lg font-semibold text-foreground">
+                      {section.title}
+                    </h3>
+                    <p className="mt-1 line-clamp-2 text-sm leading-relaxed text-muted">
+                      {section.intro}
+                    </p>
+                    <span className="mt-3 inline-flex items-center gap-1 text-sm font-medium text-brand">
+                      Open section
+                      <span className="transition-transform group-hover:translate-x-1">
+                        →
+                      </span>
+                    </span>
+                  </Link>
+                </li>
+              ))}
+            </ol>
+          </section>
         ))}
 
-        <p className="px-1 pt-2 text-sm text-muted">More sections coming soon.</p>
+        <p className="px-1 text-sm text-muted">More modules coming soon.</p>
       </div>
     </main>
   );
