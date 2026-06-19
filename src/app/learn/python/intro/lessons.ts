@@ -1,6 +1,5 @@
-// Single source of truth for the "Introduction to Programming" module: the
-// lesson order, slugs, titles and one-line blurbs. The overview page, the
-// lesson shell (prev/next pager) and each lesson's metadata all read from here.
+// Ordered lessons for the "Introduction to Programming" module. Module-level
+// metadata (title, position, what follows) lives in ../modules.ts.
 
 export type Lesson = {
   slug: string;
@@ -45,7 +44,3 @@ export const LESSONS: Lesson[] = [
     blurb: "Speed, portability, debugging and distribution — side by side.",
   },
 ];
-
-export function lessonIndex(slug: string) {
-  return LESSONS.findIndex((l) => l.slug === slug);
-}

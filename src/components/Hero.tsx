@@ -149,7 +149,7 @@ export default function Hero() {
 
       <div className="hero-rise relative mt-10 flex gap-4">
         <Link
-          href="/learn/python/intro"
+          href="/learn/python"
           className="rounded-xl bg-brand-strong px-6 py-3 font-semibold text-background transition-transform hover:scale-[1.03]"
         >
           Start the loop →
