@@ -109,9 +109,14 @@ export default function InstallSteps() {
               </div>
             </div>
             <div className="relative">
-              <span className="rounded-lg bg-brand-strong px-4 py-2 text-sm font-semibold text-background">
+              <a
+                href="https://www.python.org/downloads/"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-block rounded-lg bg-brand-strong px-4 py-2 text-sm font-semibold text-background transition-transform hover:scale-[1.03]"
+              >
                 ⬇ Download
-              </span>
+              </a>
               <span className="is-dl-click absolute -bottom-2 -right-2 text-lg">
                 👆
               </span>
