@@ -5,6 +5,7 @@
 
 import { LESSONS as INTRO_LESSONS } from "./intro/lessons";
 import { LESSONS as MEET_LESSONS } from "./meet-python/lessons";
+import { LESSONS as INSTALL_LESSONS } from "./install/lessons";
 
 export type Lesson = { slug: string; title: string; blurb: string };
 
@@ -34,6 +35,15 @@ export const MODULES: CourseModule[] = [
     intro:
       "Now meet the language itself. Where Python came from, what makes it a joy to use, who its rivals are, and where you'll find it running in the real world — the story before the syntax.",
     lessons: MEET_LESSONS,
+    next: { href: "/learn/python/install", label: "Downloading and Installing Python" },
+  },
+  {
+    slug: "install",
+    number: 3,
+    title: "Downloading and Installing Python",
+    intro:
+      "Time to get Python running on your own machine. Download and install it, learn the different ways to run your code, write your very first program, and — just as importantly — break it and fix it.",
+    lessons: INSTALL_LESSONS,
     next: { href: "/learn/python/lists", label: "Lists" },
   },
 ];
