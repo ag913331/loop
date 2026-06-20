@@ -59,3 +59,23 @@ html {
   background-clip: text;
   color: transparent;
 }
+
+/* A light glint that endlessly travels the infinity logo — the "loop". */
+@keyframes loop-flow {
+  to {
+    stroke-dashoffset: -100;
+  }
+}
+
+.loop-pulse {
+  stroke-dasharray: 14 86;
+  stroke-dashoffset: 0;
+  animation: loop-flow 3s linear infinite;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .loop-pulse {
+    animation: none;
+    opacity: 0;
+  }
+}
