@@ -1,5 +1,11 @@
 import LessonShell from "@/components/LessonShell";
 import FirstProgramBuild from "@/components/FirstProgramBuild";
+import PyodideRunner from "@/components/PyodideRunner";
+
+const STARTER_CODE = `# Change "Ada" to your own name, then press Run ▶
+name = "Ada"
+print("Hello,", name)
+print("Welcome to Python!")`;
 
 export const metadata = {
   title: "Writing your first program — loop",
@@ -41,11 +47,22 @@ export default function Page() {
       </p>
 
       <p className="leading-relaxed text-muted">
-        Save it as <span className="font-mono text-foreground">greet.py</span>,
-        run <span className="font-mono text-brand">python greet.py</span>, and
-        you&apos;ve written your first real program. From here, every new idea —
-        more variables, doing maths, making decisions — just adds to this same
-        foundation.
+        Don&apos;t just take our word for it — this is real Python, running right
+        here in your browser. Change{" "}
+        <span className="font-mono text-warn">&quot;Ada&quot;</span> to your own
+        name (or add another <span className="font-mono text-foreground">print</span>{" "}
+        line) and press <span className="font-mono text-brand">Run</span>:
+      </p>
+
+      <PyodideRunner initialCode={STARTER_CODE} />
+
+      <p className="leading-relaxed text-muted">
+        That&apos;s exactly what happens when you save it as{" "}
+        <span className="font-mono text-foreground">greet.py</span> and run{" "}
+        <span className="font-mono text-brand">python greet.py</span> on your own
+        machine. You&apos;ve written your first real program. From here, every new
+        idea — more variables, doing maths, making decisions — just adds to this
+        same foundation.
       </p>
     </LessonShell>
   );

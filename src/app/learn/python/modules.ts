@@ -8,7 +8,7 @@
 import { LESSONS as INTRO_LESSONS } from "./intro/lessons";
 import { LESSONS as MEET_LESSONS } from "./meet-python/lessons";
 import { LESSONS as INSTALL_LESSONS } from "./install/lessons";
-import { LESSONS as FIRST_PROGRAM_LESSONS } from "./first-program/lessons";
+import { LESSONS as BASICS_LESSONS } from "./basics/lessons";
 
 export type Lesson = { slug: string; title: string; blurb: string };
 
@@ -55,16 +55,16 @@ export const MODULES: Module[] = [
     ],
   },
   {
-    title: "My first program",
+    title: "Python data types, variables, operators, and basic I/O operations",
     intro:
-      "Now you write code. Build real programs from scratch, one small, satisfying step at a time.",
+      "The working core of Python: write and run real programs, get comfortable with print(), then move on to variables, data types, operators, and reading input.",
     sections: [
       {
-        slug: "first-program",
-        title: "Your very first program",
+        slug: "basics",
+        title: "Basics",
         intro:
-          "You've got Python installed — now let's make it do something that's yours. Write a real little program, give it a value to remember, and watch it come to life.",
-        lessons: FIRST_PROGRAM_LESSONS,
+          "Where it gets hands-on: your first real programs, then a thorough tour of print() — the function you'll lean on to see what your code is doing.",
+        lessons: BASICS_LESSONS,
       },
     ],
   },
