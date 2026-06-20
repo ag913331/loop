@@ -13,9 +13,10 @@ export default function Page() {
       <p className="mt-6 text-lg leading-relaxed text-muted">
         When you give print several arguments, how does it know which comes
         first? By their <strong className="text-foreground">position</strong>.
-        These are called <strong className="text-foreground">positional
-        arguments</strong>: the first value you write is used first, the second
-        is used second, and so on.
+        These are called{" "}
+        <strong className="text-foreground">positional arguments</strong>: the
+        first value you write is used first, the second is used second, and so
+        on.
       </p>
 
       <PositionalArgs />

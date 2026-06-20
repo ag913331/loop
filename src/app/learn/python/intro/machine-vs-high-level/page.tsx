@@ -12,7 +12,7 @@ export default function Page() {
     <LessonShell slug="machine-vs-high-level">
       <p className="mt-6 text-lg leading-relaxed text-muted">
         Deep down, a processor only understands one thing:{" "}
-        <strong className="text-foreground">machine language</strong> — long
+        <strong className="text-foreground">machine language</strong> {" "} — long
         strings of 0s and 1s, each pattern standing for a tiny operation. It&apos;s
         what runs, but it&apos;s almost impossible for a human to read or write
         directly.

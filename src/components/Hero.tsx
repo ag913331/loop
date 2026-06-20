@@ -118,10 +118,6 @@ export default function Hero() {
         ))}
       </div>
 
-      <span className="hero-rise relative mb-8 rounded-full border border-border bg-surface px-4 py-1.5 text-xs font-medium text-muted">
-        Now in early development · Starting with Python
-      </span>
-
       {/* animated wordmark */}
       <h1
         className="relative flex select-none text-7xl font-bold tracking-tight sm:text-8xl"

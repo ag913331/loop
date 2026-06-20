@@ -19,7 +19,7 @@ export default function Page() {
       <CompileVsInterpret />
 
       <p className="leading-relaxed text-muted">
-        A <strong className="text-foreground">compiler</strong> translates your
+        A <strong className="text-foreground">compiler</strong> {" "} translates your
         whole program ahead of time into a standalone machine-code file. After
         that, the computer runs the file directly — the original source
         isn&apos;t needed anymore.

@@ -12,8 +12,8 @@ export default function Page() {
     <LessonShell slug="function-arguments">
       <p className="mt-6 text-lg leading-relaxed text-muted">
         We&apos;ve been calling the values inside the parentheses{" "}
-        <strong className="text-foreground">arguments</strong> — let&apos;s make
-        that precise. An <strong className="text-foreground">argument</strong> is
+        <strong className="text-foreground">arguments</strong> {" "} — let&apos;s make
+        that precise. An <strong className="text-foreground">argument</strong> {" "} is
         a single piece of data you hand to a function for it to work with. It
         sits inside the function&apos;s parentheses.
       </p>

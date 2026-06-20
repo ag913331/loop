@@ -22,8 +22,8 @@ export default function Home() {
             body: "Animations trigger when you reach them, at reading pace — with a replay whenever you want.",
           },
           {
-            title: "Python first",
-            body: "We're starting with Python fundamentals. More languages follow once the format proves itself.",
+            title: "Run it yourself",
+            body: "Edit and run real Python right in the browser — no setup, instant output — then lock it in with a quick quiz.",
           },
         ].map((c) => (
           <div
