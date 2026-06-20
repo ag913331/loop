@@ -30,7 +30,7 @@ export default function Page() {
         Companies you know — from Netflix and Spotify to Instagram and NASA — lean
         on Python somewhere in their stack. Learning it opens a remarkably wide
         set of doors. But no tool is perfect, so next we&apos;ll be honest about
-        where Python <em>isn&apos;t</em> the best pick.
+        where Python <em>isn&apos;t</em>{" "}the best pick.
       </p>
     </LessonShell>
   );

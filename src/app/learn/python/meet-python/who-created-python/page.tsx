@@ -22,7 +22,7 @@ export default function Page() {
 
       <p className="leading-relaxed text-muted">
         For decades Guido guided the language as its{" "}
-        <span className="font-mono text-foreground">BDFL</span> — &ldquo;Benevolent
+        <span className="font-mono text-foreground">BDFL</span>{" "}— &ldquo;Benevolent
         Dictator For Life,&rdquo; the person with the final say on how Python
         should grow. He stepped back from that role in 2018, and today Python is
         steered by a community steering council.
@@ -30,10 +30,10 @@ export default function Page() {
 
       <p className="leading-relaxed text-muted">
         And the name? It has nothing to do with snakes. Guido was reading scripts
-        from <em>Monty Python&apos;s Flying Circus</em> and wanted something
+        from <em>Monty Python&apos;s Flying Circus</em>{" "}and wanted something
         short, a little mysterious, and fun. The playful spirit stuck — you&apos;ll
-        still see <span className="font-mono text-foreground">spam</span> and{" "}
-        <span className="font-mono text-foreground">eggs</span> in Python
+        still see <span className="font-mono text-foreground">spam</span>{" "}and{" "}
+        <span className="font-mono text-foreground">eggs</span>{" "}in Python
         examples to this day.
       </p>
     </LessonShell>

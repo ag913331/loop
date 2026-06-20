@@ -13,7 +13,7 @@ export default function Page() {
       <p className="mt-6 text-lg leading-relaxed text-muted">
         High-level code has to be turned into machine instructions before it can
         run. There are two classic ways to do it, and the difference is mostly{" "}
-        <em>when</em> the translation happens.
+        <em>when</em>{" "}the translation happens.
       </p>
 
       <CompileVsInterpret />
@@ -26,7 +26,7 @@ export default function Page() {
       </p>
 
       <p className="leading-relaxed text-muted">
-        An <strong className="text-foreground">interpreter</strong> takes a
+        An <strong className="text-foreground">interpreter</strong>{" "}takes a
         different route: it reads your source and runs it{" "}
         <em>line by line</em>, translating on the fly each time the program runs.
         Python works this way — which is why the next lesson looks at exactly

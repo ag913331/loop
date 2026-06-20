@@ -12,7 +12,7 @@ export default function Page() {
     <LessonShell slug="more-than-one-python">
       <p className="mt-6 text-lg leading-relaxed text-muted">
         Here&apos;s a subtle but useful distinction. &ldquo;Python&rdquo; is the{" "}
-        <em>language</em> — the rules and vocabulary. The program that actually
+        <em>language</em>{" "}— the rules and vocabulary. The program that actually
         reads and runs your code is a separate thing called an{" "}
         <strong className="text-foreground">implementation</strong>, and there
         are several of them.
@@ -22,10 +22,10 @@ export default function Page() {
 
       <p className="leading-relaxed text-muted">
         The one almost everyone uses is{" "}
-        <span className="font-mono text-foreground">CPython</span> — the reference
+        <span className="font-mono text-foreground">CPython</span>{" "}— the reference
         implementation, written in C. When you download Python from python.org,
         that&apos;s what you get. The others exist for special reasons:{" "}
-        <span className="font-mono text-foreground">PyPy</span> runs the same code
+        <span className="font-mono text-foreground">PyPy</span>{" "}runs the same code
         faster, while <span className="font-mono text-foreground">MicroPython</span>{" "}
         shrinks it down to run on a chip smaller than a coin.
       </p>

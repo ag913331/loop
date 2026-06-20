@@ -13,9 +13,9 @@ export default function Page() {
       <p className="mt-6 text-lg leading-relaxed text-muted">
         You&apos;ve been using <span className="font-mono text-brand">print</span>{" "}
         since your very first program. It&apos;s worth a proper look, because it
-        shows off three ideas that hold for <em>every</em> function in Python:
+        shows off three ideas that hold for <em>every</em>{" "}function in Python:
         what you put <strong className="text-foreground">in</strong>, the{" "}
-        <strong className="text-foreground">effect</strong> it has, and the{" "}
+        <strong className="text-foreground">effect</strong>{" "}it has, and the{" "}
         <strong className="text-foreground">value it returns</strong>.
       </p>
 
@@ -24,20 +24,20 @@ export default function Page() {
       <p className="leading-relaxed text-muted">
         What you put in are its <strong className="text-foreground">arguments</strong>{" "}
         — the values inside the parentheses. Its{" "}
-        <strong className="text-foreground">effect</strong> is the visible thing
+        <strong className="text-foreground">effect</strong>{" "}is the visible thing
         it does: writing those values to the screen. That&apos;s why you use it —
-        to <em>see</em> what your program is doing.
+        to <em>see</em>{" "}what your program is doing.
       </p>
 
       <p className="leading-relaxed text-muted">
         The third idea is subtler. Every function call also{" "}
-        <strong className="text-foreground">returns a value</strong> back to your
+        <strong className="text-foreground">returns a value</strong>{" "}back to your
         code — and print&apos;s returned value is{" "}
         <span className="font-mono text-accent">None</span>, Python&apos;s way of
         saying &ldquo;nothing useful here.&rdquo; That makes sense: you call print
         for its effect, not to get something back. Plenty of other functions
         you&apos;ll meet are the opposite — their whole point is the value they
-        return. Keeping <em>effect</em> and <em>returned value</em> apart will
+        return. Keeping <em>effect</em>{" "}and <em>returned value</em>{" "}apart will
         save you confusion later.
       </p>
 

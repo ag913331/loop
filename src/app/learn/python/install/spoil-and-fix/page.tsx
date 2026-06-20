@@ -20,8 +20,8 @@ export default function Page() {
       <SpoilAndFix />
 
       <p className="leading-relaxed text-muted">
-        Misspell <span className="font-mono text-foreground">print</span> as{" "}
-        <span className="font-mono text-danger">prnt</span> and Python stops with
+        Misspell <span className="font-mono text-foreground">print</span>{" "}as{" "}
+        <span className="font-mono text-danger">prnt</span>{" "}and Python stops with
         a <span className="font-mono text-foreground">NameError</span>. That block
         of red text is a <em>traceback</em>, and it&apos;s on your side: it tells
         you the file, the line number, and exactly what it didn&apos;t understand.

@@ -19,7 +19,7 @@ export default function Page() {
       <TradeoffComparison />
 
       <p className="leading-relaxed text-muted">
-        <strong className="text-foreground">Compiling</strong> shines when speed
+        <strong className="text-foreground">Compiling</strong>{" "}shines when speed
         and distribution matter: the program is already machine code, so it runs
         fast, and you can ship a single file without the source. The price is
         flexibility — the binary is built for one kind of machine, and every
@@ -27,7 +27,7 @@ export default function Page() {
       </p>
 
       <p className="leading-relaxed text-muted">
-        <strong className="text-foreground">Interpreting</strong> trades raw
+        <strong className="text-foreground">Interpreting</strong>{" "}trades raw
         speed for convenience: the same code runs anywhere the interpreter
         exists, and you can change a line and run it instantly. That fast,
         forgiving feedback loop is a big reason Python is such a friendly place

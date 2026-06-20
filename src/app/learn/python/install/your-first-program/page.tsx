@@ -14,7 +14,7 @@ export default function Page() {
         Tradition says your first program should say hello to the world — so
         let&apos;s honour it. Open a text editor, type one line, and save it as a
         file called <span className="font-mono text-foreground">hello.py</span>.
-        The <span className="font-mono text-foreground">.py</span> ending tells
+        The <span className="font-mono text-foreground">.py</span>{" "}ending tells
         everyone (and your computer) that it&apos;s Python.
       </p>
 
@@ -24,7 +24,7 @@ export default function Page() {
         Then run it from a terminal with{" "}
         <span className="font-mono text-brand">python hello.py</span>. Python reads
         your file top to bottom, hits the{" "}
-        <span className="font-mono text-foreground">print</span> instruction, and
+        <span className="font-mono text-foreground">print</span>{" "}instruction, and
         writes <span className="font-mono text-foreground">Hello, World!</span>{" "}
         back to you. That&apos;s a complete program — really.
       </p>

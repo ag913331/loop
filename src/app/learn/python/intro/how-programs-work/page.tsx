@@ -11,7 +11,7 @@ export default function Page() {
   return (
     <LessonShell slug="how-programs-work">
       <p className="mt-6 text-lg leading-relaxed text-muted">
-        A <span className="font-mono text-foreground">program</span> is nothing
+        A <span className="font-mono text-foreground">program</span>{" "}is nothing
         more than a list of instructions. The computer reads them{" "}
         <em>one at a time, from top to bottom</em>, and does exactly what each
         one says — no guessing, no skipping ahead. Watch this tiny program run:
@@ -32,7 +32,7 @@ export default function Page() {
 
       <p className="leading-relaxed text-muted">
         Everything else you&apos;ll learn — decisions, loops, functions — is
-        just a way of controlling <em>which</em> instructions run and{" "}
+        just a way of controlling <em>which</em>{" "}instructions run and{" "}
         <em>how many times</em>. But underneath, it&apos;s always this: a
         sequence of steps the computer follows faithfully.
       </p>

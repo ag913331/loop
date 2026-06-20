@@ -22,26 +22,26 @@ export default function Page() {
         <strong className="text-foreground">keyword arguments</strong>, written as{" "}
         <span className="font-mono text-foreground">name=value</span>. print has
         two especially handy ones:{" "}
-        <span className="font-mono text-foreground">sep</span> and{" "}
+        <span className="font-mono text-foreground">sep</span>{" "}and{" "}
         <span className="font-mono text-foreground">end</span>.
       </p>
 
       <KeywordArgs />
 
       <p className="leading-relaxed text-muted">
-        <span className="font-mono text-foreground">sep</span> (short for
-        separator) sets what goes <em>between</em> your values — it defaults to a
+        <span className="font-mono text-foreground">sep</span>{" "}(short for
+        separator) sets what goes <em>between</em>{" "}your values — it defaults to a
         single space, but{" "}
-        <span className="font-mono text-brand">sep=&quot;-&quot;</span> joins them
+        <span className="font-mono text-brand">sep=&quot;-&quot;</span>{" "}joins them
         with dashes instead.{" "}
-        <span className="font-mono text-foreground">end</span> sets what comes{" "}
-        <em>after</em> the last value — it defaults to a newline (that invisible{" "}
+        <span className="font-mono text-foreground">end</span>{" "}sets what comes{" "}
+        <em>after</em>{" "}the last value — it defaults to a newline (that invisible{" "}
         <span className="font-mono text-accent">\n</span>), which is why each
         print normally starts a fresh line.
       </p>
 
       <p className="leading-relaxed text-muted">
-        Change <span className="font-mono text-foreground">end</span> and you can
+        Change <span className="font-mono text-foreground">end</span>{" "}and you can
         keep several prints on the same line. Because they have names, the order
         of keyword arguments doesn&apos;t matter — and they always come after your
         positional values. Try it:

@@ -30,7 +30,7 @@ export default function Page() {
       </p>
 
       <p className="leading-relaxed text-muted">
-        That automatic space is print&apos;s <em>default</em> behaviour, and the
+        That automatic space is print&apos;s <em>default</em>{" "}behaviour, and the
         next lessons show how to control it. First though — have a play. Add a
         value, remove one, mix in a number:
       </p>

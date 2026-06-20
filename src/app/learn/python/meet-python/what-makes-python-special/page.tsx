@@ -12,7 +12,7 @@ export default function Page() {
     <LessonShell slug="what-makes-python-special">
       <p className="mt-6 text-lg leading-relaxed text-muted">
         Plenty of languages can do the job. Python&apos;s superpower is{" "}
-        <strong className="text-foreground">how little it asks of you</strong> to
+        <strong className="text-foreground">how little it asks of you</strong>{" "}to
         get there. The same task that needs a wall of boilerplate elsewhere is
         often a single, readable line in Python.
       </p>
@@ -23,7 +23,7 @@ export default function Page() {
         That readability is by design — Python reads almost like English, with
         meaning shown by indentation instead of a clutter of braces and
         semicolons. It&apos;s easy to write, but just as importantly, easy to{" "}
-        <em>read</em> later, which is where programmers spend most of their time.
+        <em>read</em>{" "}later, which is where programmers spend most of their time.
       </p>
 
       <p className="leading-relaxed text-muted">

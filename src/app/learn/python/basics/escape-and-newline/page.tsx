@@ -18,7 +18,7 @@ export default function Page() {
       <p className="mt-6 text-lg leading-relaxed text-muted">
         How do you tell print to break onto a new line, when you can&apos;t press
         Enter inside a string? You use a special code. A backslash{" "}
-        <span className="font-mono text-foreground">\</span> inside a string is an{" "}
+        <span className="font-mono text-foreground">\</span>{" "}inside a string is an{" "}
         <strong className="text-foreground">escape character</strong>: it tells
         Python that the next character means something special.
       </p>
@@ -26,18 +26,18 @@ export default function Page() {
       <EscapeChars />
 
       <p className="leading-relaxed text-muted">
-        The most common one is <span className="font-mono text-accent">\n</span> —
+        The most common one is <span className="font-mono text-accent">\n</span>{" "}—
         a <strong className="text-foreground">newline</strong>. It isn&apos;t
         printed as a backslash and an &ldquo;n&rdquo;; instead, print breaks the
         text onto the next line right where it sits. Its cousin{" "}
-        <span className="font-mono text-accent">\t</span> inserts a tab.
+        <span className="font-mono text-accent">\t</span>{" "}inserts a tab.
       </p>
 
       <p className="leading-relaxed text-muted">
         Because the backslash is special, to print an actual backslash you write
         two of them: <span className="font-mono text-foreground">\\</span>. Try
-        moving the <span className="font-mono text-accent">\n</span> and{" "}
-        <span className="font-mono text-accent">\t</span> around below and see
+        moving the <span className="font-mono text-accent">\n</span>{" "}and{" "}
+        <span className="font-mono text-accent">\t</span>{" "}around below and see
         what happens:
       </p>
 

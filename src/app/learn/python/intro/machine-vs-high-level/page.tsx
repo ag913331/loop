@@ -22,7 +22,7 @@ export default function Page() {
 
       <p className="leading-relaxed text-muted">
         So instead we write in a{" "}
-        <strong className="text-foreground">high-level language</strong> like
+        <strong className="text-foreground">high-level language</strong>{" "}like
         Python — close to human language, readable, and not tied to any one kind
         of processor. One clear line like{" "}
         <span className="font-mono text-brand">print(&quot;Hi&quot;)</span>{" "}

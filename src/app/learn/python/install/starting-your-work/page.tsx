@@ -12,10 +12,10 @@ export default function Page() {
     <LessonShell slug="starting-your-work">
       <p className="mt-6 text-lg leading-relaxed text-muted">
         Now that Python is installed, how do you actually use it? The quickest way
-        is the <strong className="text-foreground">interactive shell</strong> —
+        is the <strong className="text-foreground">interactive shell</strong>{" "}—
         sometimes called the REPL. Open a terminal, type{" "}
         <span className="font-mono text-foreground">python</span>, and you get a{" "}
-        <span className="font-mono text-accent">&gt;&gt;&gt;</span> prompt waiting
+        <span className="font-mono text-accent">&gt;&gt;&gt;</span>{" "}prompt waiting
         for you.
       </p>
 

@@ -24,7 +24,7 @@ export default function Page() {
       <p className="leading-relaxed text-muted">
         It sounds obvious for print — they just come out in the order you wrote
         them — but it&apos;s a rule that runs through all of Python. A function
-        decides what each <em>slot</em> means, and the position of your value
+        decides what each <em>slot</em>{" "}means, and the position of your value
         decides which slot it fills.
       </p>
 

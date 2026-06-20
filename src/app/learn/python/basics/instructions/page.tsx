@@ -12,7 +12,7 @@ export default function Page() {
     <LessonShell slug="instructions">
       <p className="mt-6 text-lg leading-relaxed text-muted">
         A call like <span className="font-mono text-brand">print(&quot;Hi&quot;)</span>{" "}
-        is one <strong className="text-foreground">instruction</strong> — a single
+        is one <strong className="text-foreground">instruction</strong>{" "}— a single
         order for Python to carry out. Real programs are made of many of them, so
         how do you put more than one together? Python has a firm opinion here.
       </p>
@@ -32,7 +32,7 @@ export default function Page() {
         There&apos;s one exception worth knowing: a single instruction is allowed
         to <em>spread across several lines</em>. That&apos;s handy later, when a
         line would otherwise grow long and hard to read — but it&apos;s still{" "}
-        <em>one</em> instruction, just stretched out. The rule holds: one
+        <em>one</em>{" "}instruction, just stretched out. The rule holds: one
         instruction per line, never several jammed onto one.
       </p>
     </LessonShell>

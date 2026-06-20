@@ -22,7 +22,7 @@ export default function Page() {
 
       <p className="leading-relaxed text-muted">
         So in <span className="font-mono text-brand">print(&quot;Hello&quot;)</span>,
-        the text <span className="font-mono text-warn">&quot;Hello&quot;</span> is
+        the text <span className="font-mono text-warn">&quot;Hello&quot;</span>{" "}is
         the argument — the thing you&apos;re asking print to show. An argument
         doesn&apos;t have to be text, either: it can be a number, or even the
         result of a calculation. Whatever you pass in, print shows it.

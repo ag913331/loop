@@ -77,8 +77,8 @@ export default function Page() {
       <p className="leading-relaxed text-muted">
         That&apos;s the whole of <span className="font-mono text-brand">print</span>{" "}
         — arguments, one instruction per line, escape characters, and the{" "}
-        <span className="font-mono text-foreground">sep</span> and{" "}
-        <span className="font-mono text-foreground">end</span> keywords. Next
+        <span className="font-mono text-foreground">sep</span>{" "}and{" "}
+        <span className="font-mono text-foreground">end</span>{" "}keywords. Next
         we&apos;ll start giving our programs memory with variables.
       </p>
     </LessonShell>
