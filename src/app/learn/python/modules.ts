@@ -10,6 +10,7 @@ import { LESSONS as MEET_LESSONS } from "./meet-python/lessons";
 import { LESSONS as INSTALL_LESSONS } from "./install/lessons";
 import { LESSONS as BASICS_LESSONS } from "./basics/lessons";
 import { LESSONS as LITERALS_LESSONS } from "./literals/lessons";
+import { LESSONS as OPERATORS_LESSONS } from "./operators/lessons";
 
 export type Lesson = { slug: string; title: string; blurb: string };
 
@@ -73,6 +74,13 @@ export const MODULES: Module[] = [
         intro:
           "The raw values you write straight into your code — numbers, text, and true/false — and the type Python gives each one.",
         lessons: LITERALS_LESSONS,
+      },
+      {
+        slug: "operators",
+        title: "Operators",
+        intro:
+          "Your data-manipulation tools. The symbols that combine values into expressions — arithmetic and beyond — and the rules that decide what happens first.",
+        lessons: OPERATORS_LESSONS,
       },
     ],
   },
