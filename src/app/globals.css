@@ -79,3 +79,30 @@ html {
     opacity: 0;
   }
 }
+
+/* Heart that floats up when the donate() button is pressed. */
+@keyframes donate-heart {
+  0% {
+    opacity: 1;
+    transform: translate(-50%, 0) scale(0.6) rotate(-8deg);
+  }
+  100% {
+    opacity: 0;
+    transform: translate(-50%, -48px) scale(1.4) rotate(8deg);
+  }
+}
+
+.donate-heart {
+  position: absolute;
+  left: 50%;
+  top: -4px;
+  pointer-events: none;
+  animation: donate-heart 1s ease-out forwards;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .donate-heart {
+    animation: none;
+    opacity: 0;
+  }
+}
