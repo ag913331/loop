@@ -12,6 +12,7 @@ import { LESSONS as BASICS_LESSONS } from "./basics/lessons";
 import { LESSONS as LITERALS_LESSONS } from "./literals/lessons";
 import { LESSONS as OPERATORS_LESSONS } from "./operators/lessons";
 import { LESSONS as VARIABLES_LESSONS } from "./variables/lessons";
+import { LESSONS as COMMENTS_LESSONS } from "./comments/lessons";
 
 export type Lesson = { slug: string; title: string; blurb: string };
 
@@ -89,6 +90,13 @@ export const MODULES: Module[] = [
         intro:
           "Give your data a name so you can store it, reuse it, and change it. Named boxes that hold a value — the memory your programs run on.",
         lessons: VARIABLES_LESSONS,
+      },
+      {
+        slug: "comments",
+        title: "Comments",
+        intro:
+          "Notes for humans that Python ignores. Why and when to leave them, how to write them, and how to switch lines of code off without deleting them.",
+        lessons: COMMENTS_LESSONS,
       },
     ],
   },
