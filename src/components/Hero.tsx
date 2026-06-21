@@ -5,6 +5,7 @@ import Link from "next/link";
 import gsap from "gsap";
 import { useGSAP } from "@gsap/react";
 import { useInViewReplay } from "./useInViewReplay";
+import LoopMark from "./LoopMark";
 
 const WORD = ["l", "o", "o", "p"];
 
@@ -117,6 +118,9 @@ export default function Hero() {
           </span>
         ))}
       </div>
+
+      {/* infinity logo */}
+      <LoopMark className="relative mb-4 h-auto w-28 sm:w-36" />
 
       {/* animated wordmark */}
       <h1

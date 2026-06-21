@@ -59,3 +59,50 @@ html {
   background-clip: text;
   color: transparent;
 }
+
+/* A light glint that endlessly travels the infinity logo — the "loop". */
+@keyframes loop-flow {
+  to {
+    stroke-dashoffset: -100;
+  }
+}
+
+.loop-pulse {
+  stroke-dasharray: 14 86;
+  stroke-dashoffset: 0;
+  animation: loop-flow 3s linear infinite;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .loop-pulse {
+    animation: none;
+    opacity: 0;
+  }
+}
+
+/* Heart that floats up when the donate() button is pressed. */
+@keyframes donate-heart {
+  0% {
+    opacity: 1;
+    transform: translate(-50%, 0) scale(0.6) rotate(-8deg);
+  }
+  100% {
+    opacity: 0;
+    transform: translate(-50%, -48px) scale(1.4) rotate(8deg);
+  }
+}
+
+.donate-heart {
+  position: absolute;
+  left: 50%;
+  top: -4px;
+  pointer-events: none;
+  animation: donate-heart 1s ease-out forwards;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .donate-heart {
+    animation: none;
+    opacity: 0;
+  }
+}
