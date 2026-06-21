@@ -11,6 +11,7 @@ import { LESSONS as INSTALL_LESSONS } from "./install/lessons";
 import { LESSONS as BASICS_LESSONS } from "./basics/lessons";
 import { LESSONS as LITERALS_LESSONS } from "./literals/lessons";
 import { LESSONS as OPERATORS_LESSONS } from "./operators/lessons";
+import { LESSONS as VARIABLES_LESSONS } from "./variables/lessons";
 
 export type Lesson = { slug: string; title: string; blurb: string };
 
@@ -81,6 +82,13 @@ export const MODULES: Module[] = [
         intro:
           "Your data-manipulation tools. The symbols that combine values into expressions — arithmetic and beyond — and the rules that decide what happens first.",
         lessons: OPERATORS_LESSONS,
+      },
+      {
+        slug: "variables",
+        title: "Variables",
+        intro:
+          "Give your data a name so you can store it, reuse it, and change it. Named boxes that hold a value — the memory your programs run on.",
+        lessons: VARIABLES_LESSONS,
       },
     ],
   },
