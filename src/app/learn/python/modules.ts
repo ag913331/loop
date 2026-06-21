@@ -13,6 +13,7 @@ import { LESSONS as LITERALS_LESSONS } from "./literals/lessons";
 import { LESSONS as OPERATORS_LESSONS } from "./operators/lessons";
 import { LESSONS as VARIABLES_LESSONS } from "./variables/lessons";
 import { LESSONS as COMMENTS_LESSONS } from "./comments/lessons";
+import { LESSONS as INPUT_LESSONS } from "./input/lessons";
 
 export type Lesson = { slug: string; title: string; blurb: string };
 
@@ -97,6 +98,13 @@ export const MODULES: Module[] = [
         intro:
           "Notes for humans that Python ignores. Why and when to leave them, how to write them, and how to switch lines of code off without deleting them.",
         lessons: COMMENTS_LESSONS,
+      },
+      {
+        slug: "input",
+        title: "Interaction with the user",
+        intro:
+          "Until now your programs only spoke. Now they listen: read what the user types with input(), and turn that text into numbers you can compute with.",
+        lessons: INPUT_LESSONS,
       },
     ],
   },

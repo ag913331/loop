@@ -26,6 +26,7 @@
 
 # claude code
 .claude/
+CLAUDE.*
 
 # debug
 npm-debug.log*

@@ -12,6 +12,7 @@ type Pyodide = {
   runPythonAsync: (code: string) => Promise<unknown>;
   setStdout: (opts: { batched: (s: string) => void }) => void;
   setStderr: (opts: { batched: (s: string) => void }) => void;
+  setStdin: (opts: { stdin: () => string }) => void;
 };
 
 declare global {
@@ -98,6 +99,17 @@ export default function PyodideRunner({
       try {
         py = await loadPyodideOnce();
         pyRef.current = py;
+        // Make input() work: ask the browser for a line of input on demand.
+        try {
+          py.setStdin({
+            stdin: () => {
+              const v = window.prompt("Your program is waiting for input:");
+              return v === null ? "" : v;
+            },
+          });
+        } catch {
+          // older runtimes without setStdin still run non-interactive code fine
+        }
       } catch {
         setStatus("idle");
         setIsError(true);
