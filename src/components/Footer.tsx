@@ -11,8 +11,9 @@ export default function Footer() {
         <CoffeeInfinity className="h-16 w-16" />
 
         <p className="max-w-xl leading-relaxed text-muted">
+          <span className="brand-gradient font-semibold">loop</span> {" "}
           <span className="text-foreground">
-            loop is free and open source — and always will be.
+            is free and open source — and always will be.
           </span>{" "}
           No VC, no trackers, no course upsell. Just one developer and a lot of
           coffee. If it helped you, a tip keeps the loop running.

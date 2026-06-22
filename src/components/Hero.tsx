@@ -141,8 +141,7 @@ export default function Hero() {
       </h1>
 
       <p className="hero-rise relative mt-6 max-w-2xl text-xl text-foreground sm:text-2xl">
-        Learning is a never-ending{" "}
-        <span className="brand-gradient font-semibold">loop</span>.
+        Learning is a never-ending cycle.
       </p>
 
       <p className="hero-rise relative mt-4 max-w-2xl text-lg text-muted">

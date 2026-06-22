@@ -17,6 +17,7 @@ import { LESSONS as INPUT_LESSONS } from "./input/lessons";
 import { LESSONS as DECISIONS_LESSONS } from "./decisions/lessons";
 import { LESSONS as LOOPS_LESSONS } from "./loops/lessons";
 import { LESSONS as LOGIC_LESSONS } from "./logic/lessons";
+import { LESSONS as LISTS_LESSONS } from "./lists/lessons";
 
 export type Lesson = { slug: string; title: string; blurb: string };
 
@@ -137,6 +138,13 @@ export const MODULES: Module[] = [
         intro:
           "Combine conditions with and, or and not — then drop a level to the bits themselves, with the bitwise operators and shifts that work on individual 0s and 1s.",
         lessons: LOGIC_LESSONS,
+      },
+      {
+        slug: "lists",
+        title: "Lists and list processing",
+        intro:
+          "Hold many values under one name, in order. Index them, change them, grow and shrink them — the collection that loops were made to process.",
+        lessons: LISTS_LESSONS,
       },
     ],
   },
