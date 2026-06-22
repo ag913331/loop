@@ -15,6 +15,7 @@ import { LESSONS as VARIABLES_LESSONS } from "./variables/lessons";
 import { LESSONS as COMMENTS_LESSONS } from "./comments/lessons";
 import { LESSONS as INPUT_LESSONS } from "./input/lessons";
 import { LESSONS as DECISIONS_LESSONS } from "./decisions/lessons";
+import { LESSONS as LOOPS_LESSONS } from "./loops/lessons";
 
 export type Lesson = { slug: string; title: string; blurb: string };
 
@@ -121,6 +122,13 @@ export const MODULES: Module[] = [
         intro:
           "Teach your code to choose. Ask yes/no questions with comparison operators, and run different code depending on the answer.",
         lessons: DECISIONS_LESSONS,
+      },
+      {
+        slug: "loops",
+        title: "Loops in Python",
+        intro:
+          "The heart of the language's name: code that repeats. while and for loops, the range() function, and the break and continue controls that steer them.",
+        lessons: LOOPS_LESSONS,
       },
     ],
   },
