@@ -16,6 +16,7 @@ import { LESSONS as COMMENTS_LESSONS } from "./comments/lessons";
 import { LESSONS as INPUT_LESSONS } from "./input/lessons";
 import { LESSONS as DECISIONS_LESSONS } from "./decisions/lessons";
 import { LESSONS as LOOPS_LESSONS } from "./loops/lessons";
+import { LESSONS as LOGIC_LESSONS } from "./logic/lessons";
 
 export type Lesson = { slug: string; title: string; blurb: string };
 
@@ -129,6 +130,13 @@ export const MODULES: Module[] = [
         intro:
           "The heart of the language's name: code that repeats. while and for loops, the range() function, and the break and continue controls that steer them.",
         lessons: LOOPS_LESSONS,
+      },
+      {
+        slug: "logic",
+        title: "Logic and bit operations",
+        intro:
+          "Combine conditions with and, or and not — then drop a level to the bits themselves, with the bitwise operators and shifts that work on individual 0s and 1s.",
+        lessons: LOGIC_LESSONS,
       },
     ],
   },
