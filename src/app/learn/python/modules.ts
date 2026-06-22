@@ -14,6 +14,7 @@ import { LESSONS as OPERATORS_LESSONS } from "./operators/lessons";
 import { LESSONS as VARIABLES_LESSONS } from "./variables/lessons";
 import { LESSONS as COMMENTS_LESSONS } from "./comments/lessons";
 import { LESSONS as INPUT_LESSONS } from "./input/lessons";
+import { LESSONS as DECISIONS_LESSONS } from "./decisions/lessons";
 
 export type Lesson = { slug: string; title: string; blurb: string };
 
@@ -105,6 +106,21 @@ export const MODULES: Module[] = [
         intro:
           "Until now your programs only spoke. Now they listen: read what the user types with input(), and turn that text into numbers you can compute with.",
         lessons: INPUT_LESSONS,
+      },
+    ],
+  },
+  {
+    title:
+      "Boolean values, conditional execution, loops, lists and list processing, logical and bitwise operations",
+    intro:
+      "Until now your code has run straight through, top to bottom. Now it gains a will of its own — making decisions, repeating work, and handling whole collections of data.",
+    sections: [
+      {
+        slug: "decisions",
+        title: "Making decisions in Python",
+        intro:
+          "Teach your code to choose. Ask yes/no questions with comparison operators, and run different code depending on the answer.",
+        lessons: DECISIONS_LESSONS,
       },
     ],
   },
