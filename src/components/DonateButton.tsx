@@ -3,7 +3,7 @@
 import { useState } from "react";
 
 // ↓ Replace with your real donation link (Buy Me a Coffee / Ko-fi / GitHub Sponsors).
-const DONATE_URL = "buymeacoffee.com/keeplooping";
+const DONATE_URL = "https://buymeacoffee.com/keeplooping";
 
 /**
  * A donate call styled as Python: `donate()` reveals its returned value (❤️) on
