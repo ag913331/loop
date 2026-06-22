@@ -2,7 +2,7 @@ import CoffeeInfinity from "./CoffeeInfinity";
 import DonateButton from "./DonateButton";
 
 // ↓ Replace with your repository URL.
-const GITHUB_URL = "https://github.com/REPLACE_ME/loop";
+const GITHUB_URL = "https://github.com/ag913331/loop";
 
 export default function Footer() {
   return (
@@ -12,7 +12,7 @@ export default function Footer() {
 
         <p className="max-w-xl leading-relaxed text-muted">
           <span className="text-foreground">
-            loop is free, open source, and ad-free — and always will be.
+            loop is free and open source — and always will be.
           </span>{" "}
           No VC, no trackers, no course upsell. Just one developer and a lot of
           coffee. If it helped you, a tip keeps the loop running.
