@@ -18,6 +18,7 @@ import { LESSONS as DECISIONS_LESSONS } from "./decisions/lessons";
 import { LESSONS as LOOPS_LESSONS } from "./loops/lessons";
 import { LESSONS as LOGIC_LESSONS } from "./logic/lessons";
 import { LESSONS as LISTS_LESSONS } from "./lists/lessons";
+import { LESSONS as SORTING_LESSONS } from "./sorting/lessons";
 
 export type Lesson = { slug: string; title: string; blurb: string };
 
@@ -145,6 +146,13 @@ export const MODULES: Module[] = [
         intro:
           "Hold many values under one name, in order. Index them, change them, grow and shrink them — the collection that loops were made to process.",
         lessons: LISTS_LESSONS,
+      },
+      {
+        slug: "sorting",
+        title: "Sorting lists: bubble sort",
+        intro:
+          "Put a list in order. Watch the classic bubble sort algorithm work step by step — then meet the one-line way Python does it for you.",
+        lessons: SORTING_LESSONS,
       },
     ],
   },
