@@ -22,6 +22,7 @@ import { LESSONS as SORTING_LESSONS } from "./sorting/lessons";
 import { LESSONS as LIST_OPS_LESSONS } from "./list-ops/lessons";
 import { LESSONS as ADVANCED_LISTS_LESSONS } from "./advanced-lists/lessons";
 import { LESSONS as FUNCTIONS_LESSONS } from "./functions/lessons";
+import { LESSONS as PARAMETERS_LESSONS } from "./parameters/lessons";
 
 export type Lesson = { slug: string; title: string; blurb: string };
 
@@ -184,6 +185,13 @@ export const MODULES: Module[] = [
         intro:
           "The single most important tool for taming complexity: a named, reusable block of code. Learn why functions exist, how breaking a problem into them keeps it manageable, where they come from, and how to write your own.",
         lessons: FUNCTIONS_LESSONS,
+      },
+      {
+        slug: "parameters",
+        title: "How functions communicate with their environment",
+        intro:
+          "Functions get useful when you can feed them data. Meet parameters and arguments — the slots a function declares and the values you pass in — and the two ways to pass them: by position and by name.",
+        lessons: PARAMETERS_LESSONS,
       },
     ],
   },
