@@ -20,6 +20,7 @@ import { LESSONS as LOGIC_LESSONS } from "./logic/lessons";
 import { LESSONS as LISTS_LESSONS } from "./lists/lessons";
 import { LESSONS as SORTING_LESSONS } from "./sorting/lessons";
 import { LESSONS as LIST_OPS_LESSONS } from "./list-ops/lessons";
+import { LESSONS as ADVANCED_LISTS_LESSONS } from "./advanced-lists/lessons";
 
 export type Lesson = { slug: string; title: string; blurb: string };
 
@@ -161,6 +162,13 @@ export const MODULES: Module[] = [
         intro:
           "The surprising truth about how lists are stored — why copying a name doesn't copy the list — and the everyday tools that follow from it: powerful slices, negative indices, and the in operator.",
         lessons: LIST_OPS_LESSONS,
+      },
+      {
+        slug: "advanced-lists",
+        title: "Lists in advanced applications",
+        intro:
+          "Lists can hold other lists — and that one idea unlocks grids, boards, and tables. Nest them to build two-dimensional arrays and beyond, with comprehensions to create them in a single line.",
+        lessons: ADVANCED_LISTS_LESSONS,
       },
     ],
   },
