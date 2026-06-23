@@ -19,6 +19,7 @@ import { LESSONS as LOOPS_LESSONS } from "./loops/lessons";
 import { LESSONS as LOGIC_LESSONS } from "./logic/lessons";
 import { LESSONS as LISTS_LESSONS } from "./lists/lessons";
 import { LESSONS as SORTING_LESSONS } from "./sorting/lessons";
+import { LESSONS as LIST_OPS_LESSONS } from "./list-ops/lessons";
 
 export type Lesson = { slug: string; title: string; blurb: string };
 
@@ -153,6 +154,13 @@ export const MODULES: Module[] = [
         intro:
           "Put a list in order. Watch the classic bubble sort algorithm work step by step — then meet the one-line way Python does it for you.",
         lessons: SORTING_LESSONS,
+      },
+      {
+        slug: "list-ops",
+        title: "Operations on lists",
+        intro:
+          "The surprising truth about how lists are stored — why copying a name doesn't copy the list — and the everyday tools that follow from it: powerful slices, negative indices, and the in operator.",
+        lessons: LIST_OPS_LESSONS,
       },
     ],
   },
