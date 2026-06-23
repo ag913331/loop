@@ -21,6 +21,7 @@ import { LESSONS as LISTS_LESSONS } from "./lists/lessons";
 import { LESSONS as SORTING_LESSONS } from "./sorting/lessons";
 import { LESSONS as LIST_OPS_LESSONS } from "./list-ops/lessons";
 import { LESSONS as ADVANCED_LISTS_LESSONS } from "./advanced-lists/lessons";
+import { LESSONS as FUNCTIONS_LESSONS } from "./functions/lessons";
 
 export type Lesson = { slug: string; title: string; blurb: string };
 
@@ -169,6 +170,20 @@ export const MODULES: Module[] = [
         intro:
           "Lists can hold other lists — and that one idea unlocks grids, boards, and tables. Nest them to build two-dimensional arrays and beyond, with comprehensions to create them in a single line.",
         lessons: ADVANCED_LISTS_LESSONS,
+      },
+    ],
+  },
+  {
+    title: "Functions, tuples, dictionaries, exceptions, and data processing",
+    intro:
+      "Your code has been one long script. Now you give it structure: package logic into reusable functions, store data in tuples and dictionaries, and handle the unexpected with exceptions.",
+    sections: [
+      {
+        slug: "functions",
+        title: "Functions",
+        intro:
+          "The single most important tool for taming complexity: a named, reusable block of code. Learn why functions exist, how breaking a problem into them keeps it manageable, where they come from, and how to write your own.",
+        lessons: FUNCTIONS_LESSONS,
       },
     ],
   },
