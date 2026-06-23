@@ -23,6 +23,7 @@ import { LESSONS as LIST_OPS_LESSONS } from "./list-ops/lessons";
 import { LESSONS as ADVANCED_LISTS_LESSONS } from "./advanced-lists/lessons";
 import { LESSONS as FUNCTIONS_LESSONS } from "./functions/lessons";
 import { LESSONS as PARAMETERS_LESSONS } from "./parameters/lessons";
+import { LESSONS as RETURN_LESSONS } from "./return-values/lessons";
 
 export type Lesson = { slug: string; title: string; blurb: string };
 
@@ -192,6 +193,13 @@ export const MODULES: Module[] = [
         intro:
           "Functions get useful when you can feed them data. Meet parameters and arguments — the slots a function declares and the values you pass in — and the two ways to pass them: by position and by name.",
         lessons: PARAMETERS_LESSONS,
+      },
+      {
+        slug: "return-values",
+        title: "Function return",
+        intro:
+          "If parameters are how data goes in, return is how it comes back out. Learn the difference between a function's effect and its result, meet the None value, see how lists travel in and out — then build five real functions.",
+        lessons: RETURN_LESSONS,
       },
     ],
   },
