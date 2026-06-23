@@ -43,7 +43,7 @@ export default function Page() {
     <LessonShell slug="lists-in-lists">
       <p className="mt-6 text-lg leading-relaxed text-muted">
         Nothing says a list&apos;s elements have to be simple values. An element
-        can be <em>another list</em> — and that single fact is the key to grids,
+        can be <em>another list</em>{" "}— and that single fact is the key to grids,
         tables and boards. To reach a value inside a nested list, index twice:{" "}
         <span className="font-mono text-foreground">people[0]</span>{" "}gives you the
         first inner list, and{" "}
@@ -55,7 +55,7 @@ export default function Page() {
 
       <p className="leading-relaxed text-muted">
         Building these lists by hand — start empty, loop,{" "}
-        <span className="font-mono text-foreground">append</span> — works, but
+        <span className="font-mono text-foreground">append</span>{" "}— works, but
         Python has a wonderfully compact alternative made for exactly this: the{" "}
         <strong className="text-foreground">list comprehension</strong>. It builds
         a whole new list from an old one in a single expression.

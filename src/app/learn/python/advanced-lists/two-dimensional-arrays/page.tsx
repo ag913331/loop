@@ -48,7 +48,7 @@ export default function Page() {
     <LessonShell slug="two-dimensional-arrays">
       <p className="mt-6 text-lg leading-relaxed text-muted">
         Put lists inside a list and you get a{" "}
-        <strong className="text-foreground">two-dimensional array</strong> — a
+        <strong className="text-foreground">two-dimensional array</strong>{" "}— a
         grid. Think of the outer list as the{" "}
         <strong className="text-foreground">rows</strong>, and each inner list as
         the cells across one row. A chessboard, a spreadsheet, a game of
@@ -65,7 +65,7 @@ export default function Page() {
       <Grid2D />
 
       <p className="leading-relaxed text-muted">
-        So <span className="font-mono text-foreground">grid[row][col]</span> — row
+        So <span className="font-mono text-foreground">grid[row][col]</span>{" "}— row
         first, then column. Assigning works the same way:{" "}
         <span className="font-mono text-foreground">grid[1][2] = 99</span>{" "}changes
         exactly one cell.

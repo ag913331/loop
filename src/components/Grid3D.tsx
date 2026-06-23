@@ -5,17 +5,30 @@ import gsap from "gsap";
 import { useGSAP } from "@gsap/react";
 import { useInViewReplay } from "./useInViewReplay";
 
-const LAYERS = 3; // depth
-const ROWS = 2;
-const COLS = 3;
+// cube[layer][row][col] — three 2x3 grids of values
+const CUBE = [
+  [
+    [1, 2, 3],
+    [4, 5, 6],
+  ],
+  [
+    [7, 8, 9],
+    [10, 11, 12],
+  ],
+  [
+    [13, 14, 15],
+    [16, 17, 18],
+  ],
+];
 const TL = 1; // target layer
 const TR = 0; // target row
 const TC = 2; // target col
 
 /**
- * A three-dimensional list, drawn as stacked layers. Selecting cube[1] lifts the
- * middle layer to the front; cube[1][0][2] then locks a single cell. Shows that
- * each extra dimension is just "a list of the thing below it". Plays in view.
+ * A three-dimensional list, drawn as a row of separate grids (one per layer).
+ * cube[1] spotlights the middle grid; cube[1][0][2] then locks a single cell —
+ * showing that each extra dimension is just "a list of the thing below it".
+ * Layers are kept apart so nothing overlaps. Plays in view, with a replay.
  */
 export default function Grid3D() {
   const { ref, inView, replay, replayCount, reducedMotion } =
@@ -30,27 +43,28 @@ export default function Grid3D() {
       const layerEls = gsap.utils.toArray<HTMLElement>(".g3-layer");
       const status = root.querySelector<HTMLElement>(".g3-status");
       const target = root.querySelector<HTMLElement>(".g3-target");
-      if (!status || layerEls.length !== LAYERS) return;
+      if (!status || layerEls.length !== CUBE.length) return;
 
-      const hit = "color-mix(in srgb, var(--brand) 30%, transparent)";
+      const hit = "color-mix(in srgb, var(--brand) 24%, transparent)";
 
       if (reducedMotion) {
+        gsap.set(layerEls, { opacity: 0.45 });
         gsap.set(layerEls[TL], { opacity: 1 });
         if (target) gsap.set(target, { backgroundColor: hit, borderColor: "var(--brand)" });
-        status.textContent = `cube[${TL}][${TR}][${TC}]  →  found`;
+        status.textContent = `cube[${TL}][${TR}][${TC}]  →  ${CUBE[TL][TR][TC]}`;
         return;
       }
 
-      gsap.set(layerEls, { opacity: 0.35 });
+      gsap.set(layerEls, { opacity: 0.45 });
       status.textContent = "cube[1][0][2]  ?";
       const tl = gsap.timeline();
 
-      // cube[1] -> spotlight the middle layer
-      tl.call(() => (status.textContent = `cube[${TL}]  →  middle layer`), [], "+=0.5");
+      // cube[1] -> spotlight the middle grid
+      tl.call(() => (status.textContent = `cube[${TL}]  →  middle grid`), [], "+=0.5");
       tl.to(layerEls[TL], { opacity: 1, duration: 0.45 }, "+=0.1");
 
-      // [0][2] -> a single cell inside it
-      tl.call(() => (status.textContent = `cube[${TL}][${TR}][${TC}]  →  one cell`), [], "+=0.6");
+      // [0][2] -> one cell inside it
+      tl.call(() => (status.textContent = `cube[${TL}][${TR}][${TC}]  →  ${CUBE[TL][TR][TC]}`), [], "+=0.6");
       if (target) tl.to(target, { backgroundColor: hit, borderColor: "var(--brand)", duration: 0.4 }, "+=0.1");
     },
     { scope, dependencies: [inView, replayCount, reducedMotion] },
@@ -74,46 +88,38 @@ export default function Grid3D() {
         </button>
       </div>
 
-      <div className="relative mx-auto h-44" style={{ width: 240 }}>
-        {/* back-to-front so the lowest index sits in front */}
-        {Array.from({ length: LAYERS }).map((_, depth) => {
-          const layer = LAYERS - 1 - depth; // render far layers first
-          return (
-            <div
-              key={layer}
-              className="g3-layer absolute rounded-xl border border-border bg-surface-2/80 p-1.5 backdrop-blur-sm"
-              style={{
-                left: layer * 34,
-                top: (LAYERS - 1 - layer) * 30,
-                zIndex: LAYERS - layer,
-              }}
-            >
-              <div className="mb-1 text-center font-mono text-[10px] text-muted">
-                [{layer}]
-              </div>
-              <div className="grid grid-cols-3 gap-1">
-                {Array.from({ length: ROWS * COLS }).map((_, i) => {
-                  const r = Math.floor(i / COLS);
-                  const c = i % COLS;
-                  const isTarget = layer === TL && r === TR && c === TC;
+      <div className="flex flex-wrap items-start justify-center gap-3 sm:gap-5">
+        {CUBE.map((layer, l) => (
+          <div
+            key={l}
+            className="g3-layer rounded-xl border border-border bg-surface-2 p-2"
+            style={{ marginTop: l * 14 }}
+          >
+            <div className="mb-1.5 text-center font-mono text-[11px] text-muted">
+              [{l}]
+            </div>
+            <div className="grid grid-cols-3 gap-1">
+              {layer.flatMap((row, r) =>
+                row.map((v, c) => {
+                  const isTarget = l === TL && r === TR && c === TC;
                   return (
                     <span
-                      key={i}
-                      className={`flex h-8 w-8 items-center justify-center rounded-md border border-border bg-background font-mono text-xs text-muted ${
+                      key={`${r}-${c}`}
+                      className={`flex h-9 w-9 items-center justify-center rounded-md border border-border bg-background font-mono text-sm text-foreground ${
                         isTarget ? "g3-target" : ""
                       }`}
                     >
-                      {r},{c}
+                      {v}
                     </span>
                   );
-                })}
-              </div>
+                }),
+              )}
             </div>
-          );
-        })}
+          </div>
+        ))}
       </div>
 
-      <div className="mt-4 text-center">
+      <div className="mt-5 text-center">
         <span className="g3-status inline-block rounded-lg border border-border bg-background px-4 py-1.5 font-mono text-sm text-foreground" />
       </div>
     </div>
