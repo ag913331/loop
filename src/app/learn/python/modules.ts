@@ -25,6 +25,7 @@ import { LESSONS as FUNCTIONS_LESSONS } from "./functions/lessons";
 import { LESSONS as PARAMETERS_LESSONS } from "./parameters/lessons";
 import { LESSONS as RETURN_LESSONS } from "./return-values/lessons";
 import { LESSONS as SCOPES_LESSONS } from "./scopes/lessons";
+import { LESSONS as MULTI_PARAM_LESSONS } from "./multi-parameter/lessons";
 
 export type Lesson = { slug: string; title: string; blurb: string };
 
@@ -208,6 +209,13 @@ export const MODULES: Module[] = [
         intro:
           "Where does a variable live, and who can see it? Meet local and global scope, the global keyword that crosses between them, and exactly what happens to the values you hand a function.",
         lessons: SCOPES_LESSONS,
+      },
+      {
+        slug: "multi-parameter",
+        title: "Creating multi-parameter functions",
+        intro:
+          "Everything you've learned about functions, put to work on real problems. Build functions that take several inputs — BMI, triangles, factorials, Fibonacci — and finish with recursion, a function that calls itself.",
+        lessons: MULTI_PARAM_LESSONS,
       },
     ],
   },
