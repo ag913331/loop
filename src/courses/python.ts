@@ -16,6 +16,7 @@ import { LESSONS as OPERATORS_LESSONS } from "@/app/learn/python/operators/lesso
 import { LESSONS as VARIABLES_LESSONS } from "@/app/learn/python/variables/lessons";
 import { LESSONS as COMMENTS_LESSONS } from "@/app/learn/python/comments/lessons";
 import { LESSONS as INPUT_LESSONS } from "@/app/learn/python/input/lessons";
+import { LESSONS as STRINGS_LESSONS } from "@/app/learn/python/strings/lessons";
 import { LESSONS as DECISIONS_LESSONS } from "@/app/learn/python/decisions/lessons";
 import { LESSONS as LOOPS_LESSONS } from "@/app/learn/python/loops/lessons";
 import { LESSONS as LOGIC_LESSONS } from "@/app/learn/python/logic/lessons";
@@ -109,6 +110,13 @@ export const pythonCourse: Course = {
           intro:
             "Until now your programs only spoke. Now they listen: read what the user types with input(), and turn that text into numbers you can compute with.",
           lessons: INPUT_LESSONS,
+        },
+        {
+          slug: "strings",
+          title: "Working with strings",
+          intro:
+            "Text is everywhere in real programs. Go beyond writing a string: reach inside it by index and slice, reshape it with built-in methods, and build new text cleanly with f-strings.",
+          lessons: STRINGS_LESSONS,
         },
       ],
     },

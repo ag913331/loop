@@ -1,79 +1,7 @@
 "use client";
 
 import { useCallback, useRef, useState } from "react";
-
-// Pyodide is CPython compiled to WebAssembly. We load it straight from the CDN
-// the first time the user runs code — nothing is downloaded until then, and
-// everything executes in the browser, so there's no backend.
-const PYODIDE_VERSION = "0.26.4";
-const PYODIDE_URL = `https://cdn.jsdelivr.net/pyodide/v${PYODIDE_VERSION}/full/`;
-
-type Pyodide = {
-  runPythonAsync: (code: string) => Promise<unknown>;
-  setStdout: (opts: { batched: (s: string) => void }) => void;
-  setStderr: (opts: { batched: (s: string) => void }) => void;
-  setStdin: (opts: { stdin: () => string }) => void;
-};
-
-declare global {
-  interface Window {
-    loadPyodide?: (opts: { indexURL: string }) => Promise<Pyodide>;
-  }
-}
-
-// Load Pyodide once per page, sharing the same instance across every runner.
-let pyodidePromise: Promise<Pyodide> | null = null;
-
-function loadPyodideOnce(): Promise<Pyodide> {
-  if (pyodidePromise) return pyodidePromise;
-  pyodidePromise = new Promise<Pyodide>((resolve, reject) => {
-    if (window.loadPyodide) {
-      window.loadPyodide({ indexURL: PYODIDE_URL }).then(resolve, reject);
-      return;
-    }
-    const script = document.createElement("script");
-    script.src = `${PYODIDE_URL}pyodide.js`;
-    script.onload = () => {
-      if (!window.loadPyodide) {
-        reject(new Error("Pyodide failed to initialise"));
-        return;
-      }
-      window.loadPyodide({ indexURL: PYODIDE_URL }).then(resolve, reject);
-    };
-    script.onerror = () => reject(new Error("Could not load the Python runtime"));
-    document.head.appendChild(script);
-  });
-  return pyodidePromise;
-}
-
-// Pyodide tracebacks include its own internal frames; strip them so the error
-// reads like an ordinary `python main.py` traceback a learner would see.
-function cleanTraceback(message: string): string {
-  const lines = message.split("\n");
-  const out: string[] = [];
-  let i = 0;
-  while (i < lines.length) {
-    const file = lines[i].match(/^\s*File "(.*?)", line/);
-    if (file) {
-      // Gather the whole frame: the File line plus its indented continuation
-      // lines (source + any ^^^ carets), stopping at the next frame or message.
-      const frame = [lines[i]];
-      let j = i + 1;
-      while (j < lines.length && /^\s/.test(lines[j]) && !/^\s*File "/.test(lines[j])) {
-        frame.push(lines[j]);
-        j++;
-      }
-      const internal =
-        file[1].includes("_pyodide") || file[1].startsWith("/lib/python");
-      if (!internal) out.push(...frame);
-      i = j;
-    } else {
-      out.push(lines[i]);
-      i++;
-    }
-  }
-  return out.join("\n").replace(/"<exec>"/g, '"main.py"');
-}
+import { getPyodide, cleanTraceback, type Pyodide } from "./pyodide";
 
 type Status = "idle" | "loading" | "running";
 
@@ -97,19 +25,8 @@ export default function PyodideRunner({
     if (!py) {
       setStatus("loading");
       try {
-        py = await loadPyodideOnce();
+        py = await getPyodide();
         pyRef.current = py;
-        // Make input() work: ask the browser for a line of input on demand.
-        try {
-          py.setStdin({
-            stdin: () => {
-              const v = window.prompt("Your program is waiting for input:");
-              return v === null ? "" : v;
-            },
-          });
-        } catch {
-          // older runtimes without setStdin still run non-interactive code fine
-        }
       } catch {
         setStatus("idle");
         setIsError(true);
