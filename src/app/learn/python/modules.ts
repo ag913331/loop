@@ -27,6 +27,7 @@ import { LESSONS as RETURN_LESSONS } from "./return-values/lessons";
 import { LESSONS as SCOPES_LESSONS } from "./scopes/lessons";
 import { LESSONS as MULTI_PARAM_LESSONS } from "./multi-parameter/lessons";
 import { LESSONS as TUPLES_DICTS_LESSONS } from "./tuples-dicts/lessons";
+import { LESSONS as EXCEPTIONS_LESSONS } from "./exceptions/lessons";
 
 export type Lesson = { slug: string; title: string; blurb: string };
 
@@ -224,6 +225,13 @@ export const MODULES: Module[] = [
         intro:
           "Two more collections, each with a superpower lists don't have. Tuples are fixed and safe; dictionaries look things up by name instead of position. Meet mutability, then both types — and watch them team up.",
         lessons: TUPLES_DICTS_LESSONS,
+      },
+      {
+        slug: "exceptions",
+        title: "Exceptions",
+        intro:
+          "Real programs meet bad data and broken assumptions. Instead of letting them crash, you catch errors as they happen with try and except — then learn to test for and hunt down the bugs you write yourself.",
+        lessons: EXCEPTIONS_LESSONS,
       },
     ],
   },
