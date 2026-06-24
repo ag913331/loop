@@ -26,6 +26,7 @@ import { LESSONS as PARAMETERS_LESSONS } from "./parameters/lessons";
 import { LESSONS as RETURN_LESSONS } from "./return-values/lessons";
 import { LESSONS as SCOPES_LESSONS } from "./scopes/lessons";
 import { LESSONS as MULTI_PARAM_LESSONS } from "./multi-parameter/lessons";
+import { LESSONS as TUPLES_DICTS_LESSONS } from "./tuples-dicts/lessons";
 
 export type Lesson = { slug: string; title: string; blurb: string };
 
@@ -216,6 +217,13 @@ export const MODULES: Module[] = [
         intro:
           "Everything you've learned about functions, put to work on real problems. Build functions that take several inputs — BMI, triangles, factorials, Fibonacci — and finish with recursion, a function that calls itself.",
         lessons: MULTI_PARAM_LESSONS,
+      },
+      {
+        slug: "tuples-dicts",
+        title: "Tuples and dictionaries",
+        intro:
+          "Two more collections, each with a superpower lists don't have. Tuples are fixed and safe; dictionaries look things up by name instead of position. Meet mutability, then both types — and watch them team up.",
+        lessons: TUPLES_DICTS_LESSONS,
       },
     ],
   },
