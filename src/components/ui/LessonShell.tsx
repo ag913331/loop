@@ -1,5 +1,6 @@
 import Link from "next/link";
 import { locateLesson, nextSection } from "@/courses";
+import MarkComplete from "@/components/ui/MarkComplete";
 
 /**
  * Shared chrome for a lesson: the eyebrow (module · section · position), title
@@ -47,7 +48,11 @@ export default function LessonShell({
         {children}
       </article>
 
-      <nav className="mt-14 flex items-stretch gap-4">
+      <div className="mt-10 flex justify-center">
+        <MarkComplete language={language} slug={slug} />
+      </div>
+
+      <nav className="mt-8 flex items-stretch gap-4">
         {prev ? (
           <Link
             href={`${base}/${prev.slug}`}

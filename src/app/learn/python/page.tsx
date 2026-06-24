@@ -1,5 +1,7 @@
 import Link from "next/link";
 import { getCourse } from "@/courses";
+import CourseProgress from "@/components/ui/CourseProgress";
+import SectionBadge from "@/components/ui/SectionBadge";
 
 const LANGUAGE = "python";
 const course = getCourse(LANGUAGE)!;
@@ -31,6 +33,8 @@ export default function CourseIndex() {
         </p>
       </header>
 
+      <CourseProgress language={course.language} />
+
       <div className="mt-12 space-y-12">
         {course.modules.map((module, mi) => (
           <section key={module.title}>
@@ -57,9 +61,15 @@ export default function CourseIndex() {
                       <span className="text-xs font-semibold uppercase tracking-wide text-accent">
                         Section {si + 1}
                       </span>
-                      <span className="text-xs text-muted">
-                        {section.lessons.length} lessons
-                      </span>
+                      <div className="flex items-center gap-2">
+                        <SectionBadge
+                          language={course.language}
+                          slugs={section.lessons.map((l) => l.slug)}
+                        />
+                        <span className="text-xs text-muted">
+                          {section.lessons.length} lessons
+                        </span>
+                      </div>
                     </div>
                     <h3 className="mt-2 text-lg font-semibold text-foreground">
                       {section.title}
