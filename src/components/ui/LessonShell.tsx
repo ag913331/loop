@@ -1,6 +1,7 @@
 import Link from "next/link";
 import { locateLesson, nextSection } from "@/courses";
 import MarkComplete from "@/components/ui/MarkComplete";
+import NextLink from "@/components/ui/NextLink";
 
 /**
  * Shared chrome for a lesson: the eyebrow (module · section · position), title
@@ -67,25 +68,22 @@ export default function LessonShell({
           <span className="flex-1" />
         )}
         {next ? (
-          <Link
+          <NextLink
             href={`${base}/${next.slug}`}
-            className="flex flex-1 flex-col items-end rounded-xl border border-border bg-surface p-4 text-right transition-colors hover:bg-surface-2"
-          >
-            <span className="text-xs text-muted">Next →</span>
-            <span className="mt-1 text-sm font-medium text-foreground">
-              {next.title}
-            </span>
-          </Link>
+            eyebrow="Next →"
+            title={next.title}
+            language={language}
+            slug={slug}
+          />
         ) : after ? (
-          <Link
+          <NextLink
             href={`/learn/${language}/${after.section.slug}`}
-            className="flex flex-1 flex-col items-end rounded-xl border border-brand/40 bg-surface p-4 text-right transition-colors hover:bg-surface-2"
-          >
-            <span className="text-xs text-brand">Section complete · Up next</span>
-            <span className="mt-1 text-sm font-medium text-foreground">
-              {after.section.title} →
-            </span>
-          </Link>
+            eyebrow="Section complete · Up next"
+            title={`${after.section.title} →`}
+            language={language}
+            slug={slug}
+            variant="section"
+          />
         ) : (
           <span className="flex-1" />
         )}
