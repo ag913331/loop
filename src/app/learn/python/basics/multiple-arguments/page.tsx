@@ -1,6 +1,6 @@
-import LessonShell from "@/components/LessonShell";
-import MultipleArguments from "@/components/MultipleArguments";
-import PyodideRunner from "@/components/PyodideRunner";
+import LessonShell from "@/components/ui/LessonShell";
+import MultipleArguments from "@/components/python/MultipleArguments";
+import PyodideRunner from "@/components/python/PyodideRunner";
 
 const STARTER_CODE = `# Add or remove values — print handles the spaces for you
 print("Python", "is", "fun")

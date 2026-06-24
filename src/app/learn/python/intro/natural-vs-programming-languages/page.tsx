@@ -1,5 +1,5 @@
-import LessonShell from "@/components/LessonShell";
-import AmbiguityVsPrecision from "@/components/AmbiguityVsPrecision";
+import LessonShell from "@/components/ui/LessonShell";
+import AmbiguityVsPrecision from "@/components/python/AmbiguityVsPrecision";
 
 export const metadata = {
   title: "Natural languages vs programming languages — loop",

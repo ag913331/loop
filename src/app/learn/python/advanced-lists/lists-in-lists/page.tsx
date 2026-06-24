@@ -1,6 +1,6 @@
-import LessonShell from "@/components/LessonShell";
-import ListComprehension from "@/components/ListComprehension";
-import PyodideRunner from "@/components/PyodideRunner";
+import LessonShell from "@/components/ui/LessonShell";
+import ListComprehension from "@/components/python/ListComprehension";
+import PyodideRunner from "@/components/python/PyodideRunner";
 
 const NESTED_CODE = `# a list whose elements are themselves lists
 people = [

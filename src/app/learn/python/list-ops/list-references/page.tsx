@@ -1,6 +1,6 @@
-import LessonShell from "@/components/LessonShell";
-import ListReference from "@/components/ListReference";
-import PyodideRunner from "@/components/PyodideRunner";
+import LessonShell from "@/components/ui/LessonShell";
+import ListReference from "@/components/python/ListReference";
+import PyodideRunner from "@/components/python/PyodideRunner";
 
 const SURPRISE_CODE = `list_1 = [1]
 list_2 = list_1     # copies the NAME, not the contents

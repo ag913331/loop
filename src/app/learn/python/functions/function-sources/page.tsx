@@ -1,6 +1,6 @@
-import LessonShell from "@/components/LessonShell";
-import FunctionSources from "@/components/FunctionSources";
-import PyodideRunner from "@/components/PyodideRunner";
+import LessonShell from "@/components/ui/LessonShell";
+import FunctionSources from "@/components/python/FunctionSources";
+import PyodideRunner from "@/components/python/PyodideRunner";
 
 const SOURCES_CODE = `# 1. Built in — always available, no setup
 print(len("python"))      # len() and print() are built-ins

@@ -1,6 +1,6 @@
-import LessonShell from "@/components/LessonShell";
-import ListIndexing from "@/components/ListIndexing";
-import PyodideRunner from "@/components/PyodideRunner";
+import LessonShell from "@/components/ui/LessonShell";
+import ListIndexing from "@/components/python/ListIndexing";
+import PyodideRunner from "@/components/python/PyodideRunner";
 
 const STARTER_CODE = `nums = [10, 20, 30, 40]
 print(nums[0])     # first  -> 10

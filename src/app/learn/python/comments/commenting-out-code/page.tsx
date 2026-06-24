@@ -1,6 +1,6 @@
-import LessonShell from "@/components/LessonShell";
-import CommentOut from "@/components/CommentOut";
-import PyodideRunner from "@/components/PyodideRunner";
+import LessonShell from "@/components/ui/LessonShell";
+import CommentOut from "@/components/python/CommentOut";
+import PyodideRunner from "@/components/python/PyodideRunner";
 
 const STARTER_CODE = `print("one")
 # print("two")     # ← remove the # to switch this back on

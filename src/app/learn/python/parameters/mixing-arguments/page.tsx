@@ -1,6 +1,6 @@
-import LessonShell from "@/components/LessonShell";
-import MixingArgs from "@/components/MixingArgs";
-import PyodideRunner from "@/components/PyodideRunner";
+import LessonShell from "@/components/ui/LessonShell";
+import MixingArgs from "@/components/python/MixingArgs";
+import PyodideRunner from "@/components/python/PyodideRunner";
 
 const MIX_CODE = `def introduce(name, age, city):
     print(name, "is", age, "and lives in", city)

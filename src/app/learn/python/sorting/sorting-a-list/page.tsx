@@ -1,5 +1,5 @@
-import LessonShell from "@/components/LessonShell";
-import PyodideRunner from "@/components/PyodideRunner";
+import LessonShell from "@/components/ui/LessonShell";
+import PyodideRunner from "@/components/python/PyodideRunner";
 
 const STARTER_CODE = `nums = [5, 1, 4, 2, 8]
 

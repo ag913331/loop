@@ -1,5 +1,5 @@
-import LessonShell from "@/components/LessonShell";
-import PythonSpecial from "@/components/PythonSpecial";
+import LessonShell from "@/components/ui/LessonShell";
+import PythonSpecial from "@/components/python/PythonSpecial";
 
 export const metadata = {
   title: "What makes Python so special — loop",

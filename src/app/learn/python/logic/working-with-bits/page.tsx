@@ -1,6 +1,6 @@
-import LessonShell from "@/components/LessonShell";
-import BitMask from "@/components/BitMask";
-import PyodideRunner from "@/components/PyodideRunner";
+import LessonShell from "@/components/ui/LessonShell";
+import BitMask from "@/components/python/BitMask";
+import PyodideRunner from "@/components/python/PyodideRunner";
 
 const STARTER_CODE = `flags = 0b0001     # bit 0 is on
 

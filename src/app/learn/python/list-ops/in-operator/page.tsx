@@ -1,6 +1,6 @@
-import LessonShell from "@/components/LessonShell";
-import InOperator from "@/components/InOperator";
-import PyodideRunner from "@/components/PyodideRunner";
+import LessonShell from "@/components/ui/LessonShell";
+import InOperator from "@/components/python/InOperator";
+import PyodideRunner from "@/components/python/PyodideRunner";
 
 const IN_CODE = `nums = [3, 8, 1, 6, 9]
 

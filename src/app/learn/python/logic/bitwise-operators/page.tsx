@@ -1,6 +1,6 @@
-import LessonShell from "@/components/LessonShell";
-import BitwiseOps from "@/components/BitwiseOps";
-import PyodideRunner from "@/components/PyodideRunner";
+import LessonShell from "@/components/ui/LessonShell";
+import BitwiseOps from "@/components/python/BitwiseOps";
+import PyodideRunner from "@/components/python/PyodideRunner";
 
 const STARTER_CODE = `print(12 & 10)   # AND  -> 8
 print(12 | 10)   # OR   -> 14

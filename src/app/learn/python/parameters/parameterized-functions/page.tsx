@@ -1,6 +1,6 @@
-import LessonShell from "@/components/LessonShell";
-import ParameterSlots from "@/components/ParameterSlots";
-import PyodideRunner from "@/components/PyodideRunner";
+import LessonShell from "@/components/ui/LessonShell";
+import ParameterSlots from "@/components/python/ParameterSlots";
+import PyodideRunner from "@/components/python/PyodideRunner";
 
 const PARAM_CODE = `# 'name' is a PARAMETER — a placeholder named in the def
 def greet(name):

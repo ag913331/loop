@@ -1,6 +1,6 @@
-import LessonShell from "@/components/LessonShell";
-import ReturnValue from "@/components/ReturnValue";
-import PyodideRunner from "@/components/PyodideRunner";
+import LessonShell from "@/components/ui/LessonShell";
+import ReturnValue from "@/components/python/ReturnValue";
+import PyodideRunner from "@/components/python/PyodideRunner";
 
 const RETURN_CODE = `def square(n):
     return n * n

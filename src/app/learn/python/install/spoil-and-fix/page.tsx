@@ -1,5 +1,5 @@
-import LessonShell from "@/components/LessonShell";
-import SpoilAndFix from "@/components/SpoilAndFix";
+import LessonShell from "@/components/ui/LessonShell";
+import SpoilAndFix from "@/components/python/SpoilAndFix";
 
 export const metadata = {
   title: "How to spoil (and fix) your code — loop",

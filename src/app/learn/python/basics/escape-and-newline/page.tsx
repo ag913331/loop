@@ -1,6 +1,6 @@
-import LessonShell from "@/components/LessonShell";
-import EscapeChars from "@/components/EscapeChars";
-import PyodideRunner from "@/components/PyodideRunner";
+import LessonShell from "@/components/ui/LessonShell";
+import EscapeChars from "@/components/python/EscapeChars";
+import PyodideRunner from "@/components/python/PyodideRunner";
 
 const STARTER_CODE = `# \\n breaks the line, \\t inserts a tab. Try changing them!
 print("Line 1\\nLine 2")

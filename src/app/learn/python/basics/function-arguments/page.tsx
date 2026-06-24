@@ -1,5 +1,5 @@
-import LessonShell from "@/components/LessonShell";
-import PrintArgument from "@/components/PrintArgument";
+import LessonShell from "@/components/ui/LessonShell";
+import PrintArgument from "@/components/python/PrintArgument";
 
 export const metadata = {
   title: "Function arguments — loop",

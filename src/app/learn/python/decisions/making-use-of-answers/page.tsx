@@ -1,6 +1,6 @@
-import LessonShell from "@/components/LessonShell";
-import BooleanVariable from "@/components/BooleanVariable";
-import PyodideRunner from "@/components/PyodideRunner";
+import LessonShell from "@/components/ui/LessonShell";
+import BooleanVariable from "@/components/python/BooleanVariable";
+import PyodideRunner from "@/components/python/PyodideRunner";
 
 const STARTER_CODE = `age = 20
 is_adult = age >= 18      # store the answer

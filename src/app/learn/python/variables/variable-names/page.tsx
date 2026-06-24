@@ -1,5 +1,5 @@
-import LessonShell from "@/components/LessonShell";
-import VariableNames from "@/components/VariableNames";
+import LessonShell from "@/components/ui/LessonShell";
+import VariableNames from "@/components/python/VariableNames";
 
 export const metadata = {
   title: "Variable names — loop",

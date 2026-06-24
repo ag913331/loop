@@ -1,5 +1,5 @@
-import LessonShell from "@/components/LessonShell";
-import HighLevelToMachine from "@/components/HighLevelToMachine";
+import LessonShell from "@/components/ui/LessonShell";
+import HighLevelToMachine from "@/components/python/HighLevelToMachine";
 
 export const metadata = {
   title: "Machine language vs high-level language — loop",

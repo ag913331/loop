@@ -1,6 +1,6 @@
-import LessonShell from "@/components/LessonShell";
-import GlobalKeyword from "@/components/GlobalKeyword";
-import PyodideRunner from "@/components/PyodideRunner";
+import LessonShell from "@/components/ui/LessonShell";
+import GlobalKeyword from "@/components/python/GlobalKeyword";
+import PyodideRunner from "@/components/python/PyodideRunner";
 
 const GLOBAL_CODE = `x = 1
 

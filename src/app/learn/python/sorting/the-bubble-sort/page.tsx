@@ -1,6 +1,6 @@
-import LessonShell from "@/components/LessonShell";
-import BubbleSort from "@/components/BubbleSort";
-import PyodideRunner from "@/components/PyodideRunner";
+import LessonShell from "@/components/ui/LessonShell";
+import BubbleSort from "@/components/python/BubbleSort";
+import PyodideRunner from "@/components/python/PyodideRunner";
 
 const STARTER_CODE = `nums = [5, 1, 4, 2, 8]
 n = len(nums)

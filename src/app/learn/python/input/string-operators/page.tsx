@@ -1,6 +1,6 @@
-import LessonShell from "@/components/LessonShell";
-import StringOps from "@/components/StringOps";
-import PyodideRunner from "@/components/PyodideRunner";
+import LessonShell from "@/components/ui/LessonShell";
+import StringOps from "@/components/python/StringOps";
+import PyodideRunner from "@/components/python/PyodideRunner";
 
 const STARTER_CODE = `first = "Ada"
 last = "Lovelace"

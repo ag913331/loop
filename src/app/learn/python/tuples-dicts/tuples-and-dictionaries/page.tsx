@@ -1,6 +1,6 @@
-import LessonShell from "@/components/LessonShell";
-import TupleUnpack from "@/components/TupleUnpack";
-import PyodideRunner from "@/components/PyodideRunner";
+import LessonShell from "@/components/ui/LessonShell";
+import TupleUnpack from "@/components/python/TupleUnpack";
+import PyodideRunner from "@/components/python/PyodideRunner";
 
 const LOOP_CODE = `ages = {"Ada": 36, "Alan": 41, "Grace": 29}
 

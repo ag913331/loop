@@ -1,5 +1,5 @@
-import LessonShell from "@/components/LessonShell";
-import BooleanDemo from "@/components/BooleanDemo";
+import LessonShell from "@/components/ui/LessonShell";
+import BooleanDemo from "@/components/python/BooleanDemo";
 
 export const metadata = {
   title: "Boolean values — loop",

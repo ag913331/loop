@@ -1,6 +1,6 @@
-import LessonShell from "@/components/LessonShell";
-import TupleUnpack from "@/components/TupleUnpack";
-import PyodideRunner from "@/components/PyodideRunner";
+import LessonShell from "@/components/ui/LessonShell";
+import TupleUnpack from "@/components/python/TupleUnpack";
+import PyodideRunner from "@/components/python/PyodideRunner";
 
 const TUPLE_CODE = `# A tuple is made with commas (the parentheses are usually optional)
 point = (3, 4)

@@ -1,6 +1,6 @@
-import LessonShell from "@/components/LessonShell";
-import DecisionIntro from "@/components/DecisionIntro";
-import PyodideRunner from "@/components/PyodideRunner";
+import LessonShell from "@/components/ui/LessonShell";
+import DecisionIntro from "@/components/python/DecisionIntro";
+import PyodideRunner from "@/components/python/PyodideRunner";
 
 const STARTER_CODE = `# A comparison is a question; the answer is a boolean
 print(7 > 3)      # True

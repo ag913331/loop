@@ -1,5 +1,5 @@
-import LessonShell from "@/components/LessonShell";
-import Quiz, { type Question } from "@/components/Quiz";
+import LessonShell from "@/components/ui/LessonShell";
+import Quiz, { type Question } from "@/components/ui/Quiz";
 
 export const metadata = {
   title: "Section quiz: the print() function — loop",

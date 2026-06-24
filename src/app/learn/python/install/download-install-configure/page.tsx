@@ -1,6 +1,6 @@
-import LessonShell from "@/components/LessonShell";
-import InstallSteps from "@/components/InstallSteps";
-import PathGuide from "@/components/PathGuide";
+import LessonShell from "@/components/ui/LessonShell";
+import InstallSteps from "@/components/python/InstallSteps";
+import PathGuide from "@/components/python/PathGuide";
 
 export const metadata = {
   title: "Downloading, installing & configuring Python — loop",

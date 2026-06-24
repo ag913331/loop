@@ -1,6 +1,6 @@
-import LessonShell from "@/components/LessonShell";
-import Assignment from "@/components/Assignment";
-import PyodideRunner from "@/components/PyodideRunner";
+import LessonShell from "@/components/ui/LessonShell";
+import Assignment from "@/components/python/Assignment";
+import PyodideRunner from "@/components/python/PyodideRunner";
 
 const STARTER_CODE = `# Create some variables, then print them
 score = 100

@@ -1,6 +1,6 @@
-import LessonShell from "@/components/LessonShell";
-import Factorial from "@/components/Factorial";
-import PyodideRunner from "@/components/PyodideRunner";
+import LessonShell from "@/components/ui/LessonShell";
+import Factorial from "@/components/python/Factorial";
+import PyodideRunner from "@/components/python/PyodideRunner";
 
 const FACT_CODE = `def factorial(n):
     result = 1

@@ -1,5 +1,5 @@
-import LessonShell from "@/components/LessonShell";
-import LanguageLayers from "@/components/LanguageLayers";
+import LessonShell from "@/components/ui/LessonShell";
+import LanguageLayers from "@/components/python/LanguageLayers";
 
 export const metadata = {
   title: "What makes a language — loop",

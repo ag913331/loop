@@ -1,6 +1,6 @@
-import LessonShell from "@/components/LessonShell";
-import BitShift from "@/components/BitShift";
-import PyodideRunner from "@/components/PyodideRunner";
+import LessonShell from "@/components/ui/LessonShell";
+import BitShift from "@/components/python/BitShift";
+import PyodideRunner from "@/components/python/PyodideRunner";
 
 const STARTER_CODE = `print(5 << 1)    # 10   (5 doubled)
 print(5 << 3)    # 40   (5 times 8)

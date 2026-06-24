@@ -1,5 +1,5 @@
-import LessonShell from "@/components/LessonShell";
-import PythonRivals from "@/components/PythonRivals";
+import LessonShell from "@/components/ui/LessonShell";
+import PythonRivals from "@/components/python/PythonRivals";
 
 export const metadata = {
   title: "Python's rivals — loop",

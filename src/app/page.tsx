@@ -1,5 +1,5 @@
-import Hero from "@/components/Hero";
-import ForLoopDemo from "@/components/ForLoopDemo";
+import Hero from "@/components/ui/Hero";
+import ForLoopDemo from "@/components/python/ForLoopDemo";
 
 export default function Home() {
   return (

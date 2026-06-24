@@ -1,6 +1,6 @@
-import LessonShell from "@/components/LessonShell";
-import LogicVsBits from "@/components/LogicVsBits";
-import PyodideRunner from "@/components/PyodideRunner";
+import LessonShell from "@/components/ui/LessonShell";
+import LogicVsBits from "@/components/python/LogicVsBits";
+import PyodideRunner from "@/components/python/PyodideRunner";
 
 const STARTER_CODE = `# logical: whole True/False values
 print(True and True)    # True

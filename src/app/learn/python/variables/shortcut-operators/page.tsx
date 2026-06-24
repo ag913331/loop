@@ -1,6 +1,6 @@
-import LessonShell from "@/components/LessonShell";
-import ShortcutOperators from "@/components/ShortcutOperators";
-import PyodideRunner from "@/components/PyodideRunner";
+import LessonShell from "@/components/ui/LessonShell";
+import ShortcutOperators from "@/components/python/ShortcutOperators";
+import PyodideRunner from "@/components/python/PyodideRunner";
 
 const STARTER_CODE = `total = 0
 total += 10      # total = total + 10

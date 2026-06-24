@@ -1,6 +1,6 @@
-import LessonShell from "@/components/LessonShell";
-import ExceptionGallery from "@/components/ExceptionGallery";
-import PyodideRunner from "@/components/PyodideRunner";
+import LessonShell from "@/components/ui/LessonShell";
+import ExceptionGallery from "@/components/python/ExceptionGallery";
+import PyodideRunner from "@/components/python/PyodideRunner";
 
 const NAMES_CODE = `def attempt(action):
     try:

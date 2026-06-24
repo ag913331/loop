@@ -1,7 +1,7 @@
-import LessonShell from "@/components/LessonShell";
-import ArgumentCopy from "@/components/ArgumentCopy";
-import ListInFunction from "@/components/ListInFunction";
-import PyodideRunner from "@/components/PyodideRunner";
+import LessonShell from "@/components/ui/LessonShell";
+import ArgumentCopy from "@/components/python/ArgumentCopy";
+import ListInFunction from "@/components/python/ListInFunction";
+import PyodideRunner from "@/components/python/PyodideRunner";
 
 const NUMBER_CODE = `def bump(n):
     n = n + 1            # changes n, the function's own copy

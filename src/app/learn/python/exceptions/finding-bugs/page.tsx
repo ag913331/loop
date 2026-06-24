@@ -1,6 +1,6 @@
-import LessonShell from "@/components/LessonShell";
-import ExecutionPaths from "@/components/ExecutionPaths";
-import PyodideRunner from "@/components/PyodideRunner";
+import LessonShell from "@/components/ui/LessonShell";
+import ExecutionPaths from "@/components/python/ExecutionPaths";
+import PyodideRunner from "@/components/python/PyodideRunner";
 
 const HIDDEN_CODE = `def describe(value):
     if value > 0:

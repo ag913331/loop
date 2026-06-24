@@ -1,6 +1,6 @@
-import LessonShell from "@/components/LessonShell";
-import InfiniteLoop from "@/components/InfiniteLoop";
-import PyodideRunner from "@/components/PyodideRunner";
+import LessonShell from "@/components/ui/LessonShell";
+import InfiniteLoop from "@/components/python/InfiniteLoop";
+import PyodideRunner from "@/components/python/PyodideRunner";
 
 const SAFE_CODE = `# A "while True" loop with an escape hatch — safe to run
 count = 0

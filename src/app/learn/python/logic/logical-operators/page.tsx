@@ -1,6 +1,6 @@
-import LessonShell from "@/components/LessonShell";
-import TruthTable from "@/components/TruthTable";
-import PyodideRunner from "@/components/PyodideRunner";
+import LessonShell from "@/components/ui/LessonShell";
+import TruthTable from "@/components/python/TruthTable";
+import PyodideRunner from "@/components/python/PyodideRunner";
 
 const STARTER_CODE = `print(True and False)   # both must be True
 print(True or False)    # either is enough

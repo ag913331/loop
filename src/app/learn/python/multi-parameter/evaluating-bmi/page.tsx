@@ -1,6 +1,6 @@
-import LessonShell from "@/components/LessonShell";
-import BMIFormula from "@/components/BMIFormula";
-import PyodideRunner from "@/components/PyodideRunner";
+import LessonShell from "@/components/ui/LessonShell";
+import BMIFormula from "@/components/python/BMIFormula";
+import PyodideRunner from "@/components/python/PyodideRunner";
 
 const BMI_CODE = `def bmi(weight, height):
     return weight / height ** 2

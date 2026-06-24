@@ -1,6 +1,6 @@
-import LessonShell from "@/components/LessonShell";
-import TypeCast from "@/components/TypeCast";
-import PyodideRunner from "@/components/PyodideRunner";
+import LessonShell from "@/components/ui/LessonShell";
+import TypeCast from "@/components/python/TypeCast";
+import PyodideRunner from "@/components/python/PyodideRunner";
 
 const STARTER_CODE = `age = input("Your age: ")
 age = int(age)              # text -> number

@@ -1,5 +1,5 @@
-import LessonShell from "@/components/LessonShell";
-import InterpreterLoop from "@/components/InterpreterLoop";
+import LessonShell from "@/components/ui/LessonShell";
+import InterpreterLoop from "@/components/python/InterpreterLoop";
 
 export const metadata = {
   title: "What does an interpreter do? — loop",

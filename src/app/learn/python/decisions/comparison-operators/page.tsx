@@ -1,6 +1,6 @@
-import LessonShell from "@/components/LessonShell";
-import ComparisonOperators from "@/components/ComparisonOperators";
-import PyodideRunner from "@/components/PyodideRunner";
+import LessonShell from "@/components/ui/LessonShell";
+import ComparisonOperators from "@/components/python/ComparisonOperators";
+import PyodideRunner from "@/components/python/PyodideRunner";
 
 const STARTER_CODE = `print(5 == 5)     # equal?
 print(5 != 3)     # not equal?

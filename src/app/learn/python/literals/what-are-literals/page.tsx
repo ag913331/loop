@@ -1,5 +1,5 @@
-import LessonShell from "@/components/LessonShell";
-import LiteralTypes from "@/components/LiteralTypes";
+import LessonShell from "@/components/ui/LessonShell";
+import LiteralTypes from "@/components/python/LiteralTypes";
 
 export const metadata = {
   title: "Literals — loop",

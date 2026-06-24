@@ -1,6 +1,6 @@
-import LessonShell from "@/components/LessonShell";
-import PositionalPassing from "@/components/PositionalPassing";
-import PyodideRunner from "@/components/PyodideRunner";
+import LessonShell from "@/components/ui/LessonShell";
+import PositionalPassing from "@/components/python/PositionalPassing";
+import PyodideRunner from "@/components/python/PyodideRunner";
 
 const POS_CODE = `def area(width, height):
     print("area is", width * height)

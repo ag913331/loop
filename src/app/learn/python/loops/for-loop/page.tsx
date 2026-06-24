@@ -1,7 +1,7 @@
-import LessonShell from "@/components/LessonShell";
-import ForEach from "@/components/ForEach";
-import ForLoopDemo from "@/components/ForLoopDemo";
-import PyodideRunner from "@/components/PyodideRunner";
+import LessonShell from "@/components/ui/LessonShell";
+import ForEach from "@/components/python/ForEach";
+import ForLoopDemo from "@/components/python/ForLoopDemo";
+import PyodideRunner from "@/components/python/PyodideRunner";
 
 const VARIETY_CODE = `# over a list
 for fruit in ["apple", "banana", "cherry"]:

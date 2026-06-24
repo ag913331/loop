@@ -1,4 +1,4 @@
-import SectionOverview from "@/components/SectionOverview";
+import SectionOverview from "@/components/ui/SectionOverview";
 
 export const metadata = {
   title: "Logic and bit operations — loop",

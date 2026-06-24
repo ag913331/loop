@@ -1,6 +1,6 @@
-import LessonShell from "@/components/LessonShell";
-import StringMathError from "@/components/StringMathError";
-import PyodideRunner from "@/components/PyodideRunner";
+import LessonShell from "@/components/ui/LessonShell";
+import StringMathError from "@/components/python/StringMathError";
+import PyodideRunner from "@/components/python/PyodideRunner";
 
 const STARTER_CODE = `age = "5"          # what input() would hand you
 print(age + 2)     # trying to add text and a number...`;

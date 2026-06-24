@@ -1,6 +1,6 @@
-import LessonShell from "@/components/LessonShell";
-import Mutability from "@/components/Mutability";
-import PyodideRunner from "@/components/PyodideRunner";
+import LessonShell from "@/components/ui/LessonShell";
+import Mutability from "@/components/python/Mutability";
+import PyodideRunner from "@/components/python/PyodideRunner";
 
 const MUT_CODE = `# A list is MUTABLE — change it after it's made
 nums = [10, 20, 30]

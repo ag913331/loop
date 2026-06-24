@@ -1,6 +1,6 @@
-import LessonShell from "@/components/LessonShell";
-import DictViews from "@/components/DictViews";
-import PyodideRunner from "@/components/PyodideRunner";
+import LessonShell from "@/components/ui/LessonShell";
+import DictViews from "@/components/python/DictViews";
+import PyodideRunner from "@/components/python/PyodideRunner";
 
 const VIEWS_CODE = `ages = {"Ada": 36, "Alan": 41, "Grace": 29}
 

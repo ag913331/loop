@@ -1,5 +1,5 @@
-import LessonShell from "@/components/LessonShell";
-import VariableBox from "@/components/VariableBox";
+import LessonShell from "@/components/ui/LessonShell";
+import VariableBox from "@/components/python/VariableBox";
 
 export const metadata = {
   title: "Variables — data-shaped boxes — loop",

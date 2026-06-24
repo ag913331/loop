@@ -1,6 +1,6 @@
-import LessonShell from "@/components/LessonShell";
-import InputReturnsString from "@/components/InputReturnsString";
-import PyodideRunner from "@/components/PyodideRunner";
+import LessonShell from "@/components/ui/LessonShell";
+import InputReturnsString from "@/components/python/InputReturnsString";
+import PyodideRunner from "@/components/python/PyodideRunner";
 
 const STARTER_CODE = `x = input("Type a number: ")
 print(x)

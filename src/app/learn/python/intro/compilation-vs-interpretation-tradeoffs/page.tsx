@@ -1,5 +1,5 @@
-import LessonShell from "@/components/LessonShell";
-import TradeoffComparison from "@/components/TradeoffComparison";
+import LessonShell from "@/components/ui/LessonShell";
+import TradeoffComparison from "@/components/python/TradeoffComparison";
 
 export const metadata = {
   title: "Compilation vs interpretation: pros & cons — loop",

@@ -1,6 +1,6 @@
-import LessonShell from "@/components/LessonShell";
-import IfStatement from "@/components/IfStatement";
-import PyodideRunner from "@/components/PyodideRunner";
+import LessonShell from "@/components/ui/LessonShell";
+import IfStatement from "@/components/python/IfStatement";
+import PyodideRunner from "@/components/python/PyodideRunner";
 
 const STARTER_CODE = `temperature = 35
 

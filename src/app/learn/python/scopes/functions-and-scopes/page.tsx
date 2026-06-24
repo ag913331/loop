@@ -1,6 +1,6 @@
-import LessonShell from "@/components/LessonShell";
-import Scope from "@/components/Scope";
-import PyodideRunner from "@/components/PyodideRunner";
+import LessonShell from "@/components/ui/LessonShell";
+import Scope from "@/components/python/Scope";
+import PyodideRunner from "@/components/python/PyodideRunner";
 
 const LOCAL_CODE = `def play():
     bonus = 10           # local — born here, dies when play() ends

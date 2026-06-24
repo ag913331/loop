@@ -1,6 +1,6 @@
-import LessonShell from "@/components/LessonShell";
-import Grid2D from "@/components/Grid2D";
-import PyodideRunner from "@/components/PyodideRunner";
+import LessonShell from "@/components/ui/LessonShell";
+import Grid2D from "@/components/python/Grid2D";
+import PyodideRunner from "@/components/python/PyodideRunner";
 
 const BUILD_CODE = `# a 3x4 grid: 3 rows, each a list of 4 numbers
 grid = [

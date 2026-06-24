@@ -1,6 +1,6 @@
-import LessonShell from "@/components/LessonShell";
-import KeywordPassing from "@/components/KeywordPassing";
-import PyodideRunner from "@/components/PyodideRunner";
+import LessonShell from "@/components/ui/LessonShell";
+import KeywordPassing from "@/components/python/KeywordPassing";
+import PyodideRunner from "@/components/python/PyodideRunner";
 
 const KW_CODE = `def area(width, height):
     print("area is", width * height)

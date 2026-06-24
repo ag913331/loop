@@ -1,7 +1,7 @@
-import LessonShell from "@/components/LessonShell";
-import ForEach from "@/components/ForEach";
-import ListSlice from "@/components/ListSlice";
-import PyodideRunner from "@/components/PyodideRunner";
+import LessonShell from "@/components/ui/LessonShell";
+import ForEach from "@/components/python/ForEach";
+import ListSlice from "@/components/python/ListSlice";
+import PyodideRunner from "@/components/python/PyodideRunner";
 
 const STARTER_CODE = `nums = [4, 8, 15, 16, 23, 42]
 

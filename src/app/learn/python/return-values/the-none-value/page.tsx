@@ -1,6 +1,6 @@
-import LessonShell from "@/components/LessonShell";
-import NoneValue from "@/components/NoneValue";
-import PyodideRunner from "@/components/PyodideRunner";
+import LessonShell from "@/components/ui/LessonShell";
+import NoneValue from "@/components/python/NoneValue";
+import PyodideRunner from "@/components/python/PyodideRunner";
 
 const NONE_CODE = `def log(msg):
     print(msg)            # an effect, but no return

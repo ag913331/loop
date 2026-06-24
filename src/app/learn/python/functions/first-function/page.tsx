@@ -1,6 +1,6 @@
-import LessonShell from "@/components/LessonShell";
-import FunctionCall from "@/components/FunctionCall";
-import PyodideRunner from "@/components/PyodideRunner";
+import LessonShell from "@/components/ui/LessonShell";
+import FunctionCall from "@/components/python/FunctionCall";
+import PyodideRunner from "@/components/python/PyodideRunner";
 
 const DEF_CODE = `def greet():
     print("Hello!")

@@ -1,6 +1,6 @@
-import LessonShell from "@/components/LessonShell";
-import StringsDemo from "@/components/StringsDemo";
-import PyodideRunner from "@/components/PyodideRunner";
+import LessonShell from "@/components/ui/LessonShell";
+import StringsDemo from "@/components/python/StringsDemo";
+import PyodideRunner from "@/components/python/PyodideRunner";
 
 const STARTER_CODE = `# Strings are text in quotes
 print("hello")

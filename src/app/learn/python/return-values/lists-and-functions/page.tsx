@@ -1,6 +1,6 @@
-import LessonShell from "@/components/LessonShell";
-import ListInFunction from "@/components/ListInFunction";
-import PyodideRunner from "@/components/PyodideRunner";
+import LessonShell from "@/components/ui/LessonShell";
+import ListInFunction from "@/components/python/ListInFunction";
+import PyodideRunner from "@/components/python/PyodideRunner";
 
 const RETURN_LIST_CODE = `# A function can RETURN a whole list it builds
 def squares_up_to(n):

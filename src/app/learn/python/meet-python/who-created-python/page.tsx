@@ -1,5 +1,5 @@
-import LessonShell from "@/components/LessonShell";
-import PythonTimeline from "@/components/PythonTimeline";
+import LessonShell from "@/components/ui/LessonShell";
+import PythonTimeline from "@/components/python/PythonTimeline";
 
 export const metadata = {
   title: "Who created Python? — loop",

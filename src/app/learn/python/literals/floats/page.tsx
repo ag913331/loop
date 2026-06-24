@@ -1,6 +1,6 @@
-import LessonShell from "@/components/LessonShell";
-import FloatsDemo from "@/components/FloatsDemo";
-import PyodideRunner from "@/components/PyodideRunner";
+import LessonShell from "@/components/ui/LessonShell";
+import FloatsDemo from "@/components/python/FloatsDemo";
+import PyodideRunner from "@/components/python/PyodideRunner";
 
 const STARTER_CODE = `# Floats have a decimal point — try some
 print(3.14)

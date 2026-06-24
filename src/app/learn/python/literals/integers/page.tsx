@@ -1,5 +1,5 @@
-import LessonShell from "@/components/LessonShell";
-import IntegersDemo from "@/components/IntegersDemo";
+import LessonShell from "@/components/ui/LessonShell";
+import IntegersDemo from "@/components/python/IntegersDemo";
 
 export const metadata = {
   title: "Integers — loop",

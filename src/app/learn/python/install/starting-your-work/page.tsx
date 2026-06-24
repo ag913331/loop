@@ -1,5 +1,5 @@
-import LessonShell from "@/components/LessonShell";
-import ReplDemo from "@/components/ReplDemo";
+import LessonShell from "@/components/ui/LessonShell";
+import ReplDemo from "@/components/python/ReplDemo";
 
 export const metadata = {
   title: "Starting your work with Python — loop",

@@ -1,5 +1,5 @@
-import LessonShell from "@/components/LessonShell";
-import PyodideRunner from "@/components/PyodideRunner";
+import LessonShell from "@/components/ui/LessonShell";
+import PyodideRunner from "@/components/python/PyodideRunner";
 
 const TEMP_CODE = `# Convert a temperature from Celsius to Fahrenheit
 celsius = 100

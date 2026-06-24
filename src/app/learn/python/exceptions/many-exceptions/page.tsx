@@ -1,6 +1,6 @@
-import LessonShell from "@/components/LessonShell";
-import ExceptRouting from "@/components/ExceptRouting";
-import PyodideRunner from "@/components/PyodideRunner";
+import LessonShell from "@/components/ui/LessonShell";
+import ExceptRouting from "@/components/python/ExceptRouting";
+import PyodideRunner from "@/components/python/PyodideRunner";
 
 const MANY_CODE = `try:
     value = int(input("Enter a number: "))

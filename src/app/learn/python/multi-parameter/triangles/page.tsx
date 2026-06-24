@@ -1,6 +1,6 @@
-import LessonShell from "@/components/LessonShell";
-import TriangleCheck from "@/components/TriangleCheck";
-import PyodideRunner from "@/components/PyodideRunner";
+import LessonShell from "@/components/ui/LessonShell";
+import TriangleCheck from "@/components/python/TriangleCheck";
+import PyodideRunner from "@/components/python/PyodideRunner";
 
 const VALID_CODE = `def is_triangle(a, b, c):
     return a + b > c and a + c > b and b + c > a

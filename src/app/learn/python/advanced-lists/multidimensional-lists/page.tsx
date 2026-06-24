@@ -1,6 +1,6 @@
-import LessonShell from "@/components/LessonShell";
-import Grid3D from "@/components/Grid3D";
-import PyodideRunner from "@/components/PyodideRunner";
+import LessonShell from "@/components/ui/LessonShell";
+import Grid3D from "@/components/python/Grid3D";
+import PyodideRunner from "@/components/python/PyodideRunner";
 
 const CUBE_CODE = `# weekly temperatures: 3 weeks x 7 days x 24 hours
 # temps[week][day][hour]

@@ -1,6 +1,6 @@
-import LessonShell from "@/components/LessonShell";
-import DictLookup from "@/components/DictLookup";
-import PyodideRunner from "@/components/PyodideRunner";
+import LessonShell from "@/components/ui/LessonShell";
+import DictLookup from "@/components/python/DictLookup";
+import PyodideRunner from "@/components/python/PyodideRunner";
 
 const DICT_CODE = `# keys map to values, written key: value
 ages = {"Ada": 36, "Alan": 41, "Grace": 29}

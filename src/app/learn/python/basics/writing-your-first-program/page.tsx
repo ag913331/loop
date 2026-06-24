@@ -1,6 +1,6 @@
-import LessonShell from "@/components/LessonShell";
-import FirstProgramBuild from "@/components/FirstProgramBuild";
-import PyodideRunner from "@/components/PyodideRunner";
+import LessonShell from "@/components/ui/LessonShell";
+import FirstProgramBuild from "@/components/python/FirstProgramBuild";
+import PyodideRunner from "@/components/python/PyodideRunner";
 
 const STARTER_CODE = `# Change "Ada" to your own name, then press Run ▶
 name = "Ada"

@@ -1,5 +1,5 @@
-import LessonShell from "@/components/LessonShell";
-import PythonInAction from "@/components/PythonInAction";
+import LessonShell from "@/components/ui/LessonShell";
+import PythonInAction from "@/components/python/PythonInAction";
 
 export const metadata = {
   title: "Where you'll see Python in action — loop",

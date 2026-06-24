@@ -1,5 +1,5 @@
-import LessonShell from "@/components/LessonShell";
-import CompileVsInterpret from "@/components/CompileVsInterpret";
+import LessonShell from "@/components/ui/LessonShell";
+import CompileVsInterpret from "@/components/python/CompileVsInterpret";
 
 export const metadata = {
   title: "Compilation vs interpretation — loop",

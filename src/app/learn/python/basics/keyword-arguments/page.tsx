@@ -1,6 +1,6 @@
-import LessonShell from "@/components/LessonShell";
-import KeywordArgs from "@/components/KeywordArgs";
-import PyodideRunner from "@/components/PyodideRunner";
+import LessonShell from "@/components/ui/LessonShell";
+import KeywordArgs from "@/components/python/KeywordArgs";
+import PyodideRunner from "@/components/python/PyodideRunner";
 
 const STARTER_CODE = `# Change sep and end and watch the output change
 print("a", "b", "c", sep="-")

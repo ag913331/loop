@@ -1,6 +1,6 @@
-import LessonShell from "@/components/LessonShell";
-import InputFlow from "@/components/InputFlow";
-import PyodideRunner from "@/components/PyodideRunner";
+import LessonShell from "@/components/ui/LessonShell";
+import InputFlow from "@/components/python/InputFlow";
+import PyodideRunner from "@/components/python/PyodideRunner";
 
 const STARTER_CODE = `name = input("What's your name? ")
 print("Hello,", name + "!")`;

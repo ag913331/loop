@@ -1,6 +1,6 @@
-import LessonShell from "@/components/LessonShell";
-import WhileLoop from "@/components/WhileLoop";
-import PyodideRunner from "@/components/PyodideRunner";
+import LessonShell from "@/components/ui/LessonShell";
+import WhileLoop from "@/components/python/WhileLoop";
+import PyodideRunner from "@/components/python/PyodideRunner";
 
 const COUNTDOWN = `n = 5
 while n > 0:

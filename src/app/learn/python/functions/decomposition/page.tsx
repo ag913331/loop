@@ -1,6 +1,6 @@
-import LessonShell from "@/components/LessonShell";
-import Decomposition from "@/components/Decomposition";
-import PyodideRunner from "@/components/PyodideRunner";
+import LessonShell from "@/components/ui/LessonShell";
+import Decomposition from "@/components/python/Decomposition";
+import PyodideRunner from "@/components/python/PyodideRunner";
 
 const DECOMP_CODE = `# Each small step is its own function...
 def brew_coffee():

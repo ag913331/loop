@@ -1,6 +1,6 @@
-import LessonShell from "@/components/LessonShell";
-import ExceptionRaise from "@/components/ExceptionRaise";
-import PyodideRunner from "@/components/PyodideRunner";
+import LessonShell from "@/components/ui/LessonShell";
+import ExceptionRaise from "@/components/python/ExceptionRaise";
+import PyodideRunner from "@/components/python/PyodideRunner";
 
 const CRASH_CODE = `value = int(input("Enter a number: "))
 print("Reciprocal:", 1 / value)

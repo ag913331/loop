@@ -1,6 +1,6 @@
-import LessonShell from "@/components/LessonShell";
-import RangeFunction from "@/components/RangeFunction";
-import PyodideRunner from "@/components/PyodideRunner";
+import LessonShell from "@/components/ui/LessonShell";
+import RangeFunction from "@/components/python/RangeFunction";
+import PyodideRunner from "@/components/python/PyodideRunner";
 
 const STARTER_CODE = `for i in range(5):
     print(i)                  # 0 1 2 3 4

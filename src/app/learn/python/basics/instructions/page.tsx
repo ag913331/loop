@@ -1,5 +1,5 @@
-import LessonShell from "@/components/LessonShell";
-import OneInstructionPerLine from "@/components/OneInstructionPerLine";
+import LessonShell from "@/components/ui/LessonShell";
+import OneInstructionPerLine from "@/components/python/OneInstructionPerLine";
 
 export const metadata = {
   title: "Instructions — loop",

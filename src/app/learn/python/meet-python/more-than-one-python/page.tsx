@@ -1,5 +1,5 @@
-import LessonShell from "@/components/LessonShell";
-import PythonFlavors from "@/components/PythonFlavors";
+import LessonShell from "@/components/ui/LessonShell";
+import PythonFlavors from "@/components/python/PythonFlavors";
 
 export const metadata = {
   title: "There's more than one Python — loop",

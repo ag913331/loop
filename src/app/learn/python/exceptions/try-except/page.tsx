@@ -1,6 +1,6 @@
-import LessonShell from "@/components/LessonShell";
-import TryExcept from "@/components/TryExcept";
-import PyodideRunner from "@/components/PyodideRunner";
+import LessonShell from "@/components/ui/LessonShell";
+import TryExcept from "@/components/python/TryExcept";
+import PyodideRunner from "@/components/python/PyodideRunner";
 
 const TRY_CODE = `try:
     value = int(input("Enter a number: "))

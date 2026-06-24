@@ -1,6 +1,6 @@
-import LessonShell from "@/components/LessonShell";
-import CommentDemo from "@/components/CommentDemo";
-import PyodideRunner from "@/components/PyodideRunner";
+import LessonShell from "@/components/ui/LessonShell";
+import CommentDemo from "@/components/python/CommentDemo";
+import PyodideRunner from "@/components/python/PyodideRunner";
 
 const STARTER_CODE = `# This line is a note to a human — Python skips it
 print("Hi")          # comments can sit after code too

@@ -1,5 +1,5 @@
-import LessonShell from "@/components/LessonShell";
-import FirstProgram from "@/components/FirstProgram";
+import LessonShell from "@/components/ui/LessonShell";
+import FirstProgram from "@/components/python/FirstProgram";
 
 export const metadata = {
   title: "Create your very first program — loop",

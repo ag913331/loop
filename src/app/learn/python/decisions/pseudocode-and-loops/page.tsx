@@ -1,5 +1,5 @@
-import LessonShell from "@/components/LessonShell";
-import ForLoopDemo from "@/components/ForLoopDemo";
+import LessonShell from "@/components/ui/LessonShell";
+import ForLoopDemo from "@/components/python/ForLoopDemo";
 
 export const metadata = {
   title: "Pseudocode and a peek at loops — loop",

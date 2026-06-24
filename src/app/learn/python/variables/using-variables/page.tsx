@@ -1,6 +1,6 @@
-import LessonShell from "@/components/LessonShell";
-import Substitution from "@/components/Substitution";
-import PyodideRunner from "@/components/PyodideRunner";
+import LessonShell from "@/components/ui/LessonShell";
+import Substitution from "@/components/python/Substitution";
+import PyodideRunner from "@/components/python/PyodideRunner";
 
 const STARTER_CODE = `price = 20
 quantity = 3

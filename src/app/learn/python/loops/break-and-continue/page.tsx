@@ -1,6 +1,6 @@
-import LessonShell from "@/components/LessonShell";
-import BreakContinue from "@/components/BreakContinue";
-import PyodideRunner from "@/components/PyodideRunner";
+import LessonShell from "@/components/ui/LessonShell";
+import BreakContinue from "@/components/python/BreakContinue";
+import PyodideRunner from "@/components/python/PyodideRunner";
 
 const BREAK_CODE = `for n in range(1, 6):
     if n == 3:

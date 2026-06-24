@@ -1,6 +1,6 @@
-import LessonShell from "@/components/LessonShell";
-import ListIntro from "@/components/ListIntro";
-import PyodideRunner from "@/components/PyodideRunner";
+import LessonShell from "@/components/ui/LessonShell";
+import ListIntro from "@/components/python/ListIntro";
+import PyodideRunner from "@/components/python/PyodideRunner";
 
 const STARTER_CODE = `# a list: square brackets, values separated by commas
 scores = [85, 92, 78, 64]

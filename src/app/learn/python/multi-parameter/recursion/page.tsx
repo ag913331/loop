@@ -1,6 +1,6 @@
-import LessonShell from "@/components/LessonShell";
-import Recursion from "@/components/Recursion";
-import PyodideRunner from "@/components/PyodideRunner";
+import LessonShell from "@/components/ui/LessonShell";
+import Recursion from "@/components/python/Recursion";
+import PyodideRunner from "@/components/python/PyodideRunner";
 
 const REC_FACT_CODE = `def factorial(n):
     if n <= 1:          # the base case — stops the recursion

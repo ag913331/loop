@@ -1,5 +1,5 @@
-import LessonShell from "@/components/LessonShell";
-import PyodideRunner from "@/components/PyodideRunner";
+import LessonShell from "@/components/ui/LessonShell";
+import PyodideRunner from "@/components/python/PyodideRunner";
 
 const LEAP_CODE = `# A leap year: divisible by 4, but NOT by 100 unless also by 400.
 def is_leap(year):

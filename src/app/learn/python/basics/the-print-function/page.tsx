@@ -1,5 +1,5 @@
-import LessonShell from "@/components/LessonShell";
-import PrintMachine from "@/components/PrintMachine";
+import LessonShell from "@/components/ui/LessonShell";
+import PrintMachine from "@/components/python/PrintMachine";
 
 export const metadata = {
   title: "The print() function — loop",

@@ -1,7 +1,7 @@
-import LessonShell from "@/components/LessonShell";
-import OperatorsTable from "@/components/OperatorsTable";
-import ModuloViz from "@/components/ModuloViz";
-import PyodideRunner from "@/components/PyodideRunner";
+import LessonShell from "@/components/ui/LessonShell";
+import OperatorsTable from "@/components/python/OperatorsTable";
+import ModuloViz from "@/components/python/ModuloViz";
+import PyodideRunner from "@/components/python/PyodideRunner";
 
 const STARTER_CODE = `# Try each operator — watch the result's type
 print(2 ** 3)    # exponentiation

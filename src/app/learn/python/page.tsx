@@ -1,8 +1,11 @@
 import Link from "next/link";
-import { MODULES } from "./modules";
+import { getCourse } from "@/courses";
+
+const LANGUAGE = "python";
+const course = getCourse(LANGUAGE)!;
 
 export const metadata = {
-  title: "Python Essentials — loop",
+  title: `${course.title} — loop`,
   description:
     "Browse the course. Every section is open — start wherever you like.",
 };
@@ -20,7 +23,7 @@ export default function CourseIndex() {
       <header className="mt-8">
         <p className="text-sm font-medium text-accent">The course</p>
         <h1 className="mt-1 text-4xl font-bold tracking-tight text-foreground">
-          Python Essentials
+          {course.title}
         </h1>
         <p className="mt-5 max-w-2xl text-lg leading-relaxed text-muted">
           Every section is open — start at the beginning, or jump to whatever
@@ -29,7 +32,7 @@ export default function CourseIndex() {
       </header>
 
       <div className="mt-12 space-y-12">
-        {MODULES.map((module, mi) => (
+        {course.modules.map((module, mi) => (
           <section key={module.title}>
             <div className="mb-4">
               <p className="text-xs font-semibold uppercase tracking-wide text-brand">
@@ -47,7 +50,7 @@ export default function CourseIndex() {
               {module.sections.map((section, si) => (
                 <li key={section.slug}>
                   <Link
-                    href={`/learn/python/${section.slug}`}
+                    href={`/learn/${course.language}/${section.slug}`}
                     className="group block rounded-2xl border border-border bg-surface p-5 transition-colors hover:bg-surface-2"
                   >
                     <div className="flex items-center justify-between">

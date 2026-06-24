@@ -1,6 +1,6 @@
-import LessonShell from "@/components/LessonShell";
-import OperatorPrecedence from "@/components/OperatorPrecedence";
-import PyodideRunner from "@/components/PyodideRunner";
+import LessonShell from "@/components/ui/LessonShell";
+import OperatorPrecedence from "@/components/python/OperatorPrecedence";
+import PyodideRunner from "@/components/python/PyodideRunner";
 
 const STARTER_CODE = `print(2 + 3 * 4)     # 14, not 20
 print(2 ** 2 ** 3)   # 256  (** binds right-to-left: 2 ** 8)

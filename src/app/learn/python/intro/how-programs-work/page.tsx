@@ -1,5 +1,5 @@
-import LessonShell from "@/components/LessonShell";
-import SequentialRun from "@/components/SequentialRun";
+import LessonShell from "@/components/ui/LessonShell";
+import SequentialRun from "@/components/python/SequentialRun";
 
 export const metadata = {
   title: "How a computer program works — loop",

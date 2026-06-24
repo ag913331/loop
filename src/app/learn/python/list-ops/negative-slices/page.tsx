@@ -1,6 +1,6 @@
-import LessonShell from "@/components/LessonShell";
-import ListSliceNegative from "@/components/ListSliceNegative";
-import PyodideRunner from "@/components/PyodideRunner";
+import LessonShell from "@/components/ui/LessonShell";
+import ListSliceNegative from "@/components/python/ListSliceNegative";
+import PyodideRunner from "@/components/python/PyodideRunner";
 
 const NEG_CODE = `nums = [10, 20, 30, 40, 50]
 

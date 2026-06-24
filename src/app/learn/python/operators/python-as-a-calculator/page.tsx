@@ -1,6 +1,6 @@
-import LessonShell from "@/components/LessonShell";
-import PythonCalculator from "@/components/PythonCalculator";
-import PyodideRunner from "@/components/PyodideRunner";
+import LessonShell from "@/components/ui/LessonShell";
+import PythonCalculator from "@/components/python/PythonCalculator";
+import PyodideRunner from "@/components/python/PyodideRunner";
 
 const STARTER_CODE = `# Can you guess the output before you run it?
 print(2 + 2)`;

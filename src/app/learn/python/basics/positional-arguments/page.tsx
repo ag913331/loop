@@ -1,5 +1,5 @@
-import LessonShell from "@/components/LessonShell";
-import PositionalArgs from "@/components/PositionalArgs";
+import LessonShell from "@/components/ui/LessonShell";
+import PositionalArgs from "@/components/python/PositionalArgs";
 
 export const metadata = {
   title: "Positional arguments — loop",

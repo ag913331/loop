@@ -1,6 +1,6 @@
-import LessonShell from "@/components/LessonShell";
-import ListInsert from "@/components/ListInsert";
-import PyodideRunner from "@/components/PyodideRunner";
+import LessonShell from "@/components/ui/LessonShell";
+import ListInsert from "@/components/python/ListInsert";
+import PyodideRunner from "@/components/python/PyodideRunner";
 
 const STARTER_CODE = `nums = [10, 20, 30]
 

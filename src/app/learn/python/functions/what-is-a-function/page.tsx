@@ -1,6 +1,6 @@
-import LessonShell from "@/components/LessonShell";
-import FunctionMachine from "@/components/FunctionMachine";
-import PyodideRunner from "@/components/PyodideRunner";
+import LessonShell from "@/components/ui/LessonShell";
+import FunctionMachine from "@/components/python/FunctionMachine";
+import PyodideRunner from "@/components/python/PyodideRunner";
 
 const REPEAT_CODE = `# Without a function — the same three lines, copied for each person
 print("=" * 20)

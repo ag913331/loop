@@ -1,5 +1,5 @@
-import LessonShell from "@/components/LessonShell";
-import WhyNotPython from "@/components/WhyNotPython";
+import LessonShell from "@/components/ui/LessonShell";
+import WhyNotPython from "@/components/python/WhyNotPython";
 
 export const metadata = {
   title: "Why not Python? — loop",

@@ -1,6 +1,6 @@
-import LessonShell from "@/components/LessonShell";
-import Fibonacci from "@/components/Fibonacci";
-import PyodideRunner from "@/components/PyodideRunner";
+import LessonShell from "@/components/ui/LessonShell";
+import Fibonacci from "@/components/python/Fibonacci";
+import PyodideRunner from "@/components/python/PyodideRunner";
 
 const FIB_CODE = `def fib(n):
     a, b = 0, 1
