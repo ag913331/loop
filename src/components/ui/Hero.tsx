@@ -119,9 +119,6 @@ export default function Hero() {
         ))}
       </div>
 
-      {/* infinity logo */}
-      <LoopMark className="relative mb-4 h-auto w-28 sm:w-36" />
-
       {/* animated wordmark */}
       <h1
         className="relative flex select-none text-7xl font-bold tracking-tight sm:text-8xl"
@@ -151,13 +148,15 @@ export default function Hero() {
         step.
       </p>
 
-      <div className="hero-rise relative mt-10 flex gap-4">
+      {/* button + mark side by side: the arrow points into the loop */}
+      <div className="hero-rise relative mt-10 flex items-center gap-6">
         <Link
           href="/learn/python"
           className="rounded-xl bg-brand-strong px-6 py-3 font-semibold text-background transition-transform hover:scale-[1.03]"
         >
           Start the loop →
         </Link>
+        <LoopMark className="h-auto w-28 sm:w-32" />
       </div>
     </div>
   );
