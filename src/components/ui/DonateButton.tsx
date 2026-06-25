@@ -36,7 +36,8 @@ export default function DonateButton() {
             />
           </span>
           <span className="block px-1 py-1.5 text-center font-sans text-xs text-muted">
-            the wallet&apos;s empty — every tip helps 🙏
+            {/* the wallet&apos;s empty — every tip helps 🙏 */}
+            Need money for treetos 🙏
           </span>
         </span>
       </span>
