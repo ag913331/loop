@@ -15,10 +15,9 @@ export default function SiteHeader() {
           aria-label="loop — home"
           className="group inline-flex items-center gap-2"
         >
-          <LoopMark className="h-auto w-8 transition-transform group-hover:scale-110" />
-          {/* <span className="brand-gradient text-xl font-bold tracking-tight">
+          <span className="brand-gradient text-2xl font-bold tracking-tight">
             loop
-          </span> */}
+          </span>
         </Link>
       </div>
     </header>
